@@ -1,0 +1,7 @@
+.container div {
+    float: none;
+}
+
+.container .left {
+    background-color: red;
+}

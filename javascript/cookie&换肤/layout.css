@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width:300px;
+    height:100px;
+    background-color: aquamarine;
+}
+.wrapper div{
+    width:100px;
+    height:100px;
+    display: inline-block;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.red{
+    margin-right: -4px;
+}
+
+.green{
+    margin-right: -4px;
+}
+
+.blue{
+}

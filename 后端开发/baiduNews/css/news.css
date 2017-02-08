@@ -1,0 +1,148 @@
+/*清除浮动*/
+
+.cf::before,
+/*******************样式重置开始*******************/
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    /*    16*0.625 = 10*/
+    font-size: 62.5%;
+    height: 100%;
+}
+
+
+/*防止在浮动过程中整个htnl以及body没有高度*/
+
+body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*样式重置结束*/
+/*******************标题样式开始******************/
+header {
+    background: url(../img/bg-news-logo_344ce44.png) #4182f1 no-repeat center center;
+    background-size: 7rem;
+}
+
+header a {
+    display: block;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+header a:nth-child(1),
+header a:nth-child(2) {
+    float: left;
+}
+
+header a:nth-child(3),
+header a:nth-child(4) {
+    float: right;
+}
+
+header a .iconfont {
+    font-size: 2rem;
+}
+
+
+/*******************导航栏样式开始*******************/
+
+nav {
+    background: #4182f1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.66%;
+    font-size: 1.44rem;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem 0;
+    font-style: normal;
+    color: #fff;
+}
+nav ul i {
+    display: inline-block;
+    height: 2rem;
+    float: right;
+    border-right: 1px solid #5898F0;
+    position: relative;
+    top: 1.1rem;
+}
+
+
+/*******************新闻内容样式开始*******************/
+/*新闻栏目一列定位*/
+.news-lists {
+    margin: 1rem 0 0;
+    padding: 0 1.3rem;
+    list-style: none;
+}
+/*新闻标题样式*/
+.news-lists h1 {
+    font-size: 1.7rem;
+}
+/*新闻内容定位*/
+.news-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+    margin-top: 1rem;
+}
+/*新闻图片布局定位*/
+.newsimg {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+/*新闻图片大小设置*/
+.newsimg img{
+    width:100%;
+    height: auto;
+}
+/*新闻内容布局定位*/
+.newscontent {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-left: 1rem;
+}
+/*新闻内容：来源与日期具体定位*/
+.newscontent span{
+    display: inline-block;
+    float: left;
+}
+/*新闻内容：来源 具体定位与样式*/
+.newscontent span:nth-child(2){
+    margin-left: 1rem;
+    border:1px solid #ff0000;
+    border-radius: 3px;
+    color:#FF0000;
+}

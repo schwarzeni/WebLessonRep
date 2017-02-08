@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css" type="text/css"> </head>
+
+<body>
+    <div class="wrapper">
+        <div class="Intro">
+            <ul>
+                <li>输入学生成绩判断等级</li>
+                <li>请输入成绩在0-100之间</li>
+                <li>无输入，输入超出数值范围，输入字符均无效</li>
+            </ul>
+        </div>
+        <div>
+            <form>
+                <input type="text" id="grade" placeholder="Input student's Grade" />
+                <input type="button" onclick="assessGrade()" value="Submit" /> </form>
+        </div>
+        <div id="assessOutput"> 结果看这里 </div>
+    </div>
+    <script src="func.js" type="text/javascript"></script>
+</body>
+
+</html>

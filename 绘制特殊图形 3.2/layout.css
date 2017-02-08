@@ -1,0 +1,450 @@
+div {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+}
+
+
+/*背景*/
+
+.pic {
+    width: 400px;
+    height: 250px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+
+/*头部*/
+
+.pic .head {
+    background-color: dodgerblue;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 2;
+    -webkit-animation-name: HeadAni;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: HeadAni;
+    -moz-animation-duration: 7s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    animation-name: HeadAni;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+/*头部动画*/
+
+@-webkit-keyframes HeadAni {
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+@-moz-keyframes HeadAni {
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes HeadAni {
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+
+/*头上的蓝边）*/
+
+.pic .head .hair {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    top: 50px;
+    left: -52px;
+    border-radius: 50%;
+}
+
+
+/*眼睛外框*/
+
+.pic .eye {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    border-width: 0;
+}
+
+
+/*左眼睛*/
+
+.pic .head .eye1 {
+    top: 10px;
+    left: 50px;
+    height: 66px;
+    width: 44px;
+    border-radius: 50% 50%;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+
+/*鼻子*/
+
+.pic .head .nose {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    top: 58px;
+    left: 89px;
+}
+
+
+/*右眼睛*/
+
+.pic .head .eye2 {
+    top: 10px;
+    left: 105px;
+    height: 66px;
+    width: 44px;
+    border-radius: 50% 50%;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+
+/*眼珠*/
+
+.pic .head .pupil {
+    position: relative;
+    background-color: black;
+    width: 6px;
+    height: 6px;
+    border-radius: 90%;
+    top: 40px;
+    left: 18px;
+}
+
+
+/*胡须，正中*/
+
+.moustache {
+    height: 40px;
+    width: 0;
+    border-width: 1px;
+    left: 100px;
+}
+
+
+/*左下胡须*/
+
+.LeftBeard1 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 49px;
+    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+}
+
+
+/*左中胡须*/
+
+.LeftBeard2 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 47px;
+    top: 67px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+
+/*左上胡须*/
+
+.LeftBeard3 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 49px;
+    top: 54px;
+    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+}
+
+
+/*右下胡须*/
+
+.RightBread1 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 150px;
+    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+}
+
+
+/*右中胡须*/
+
+.RightBread2 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 150px;
+    top: 67px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+
+/*右上胡须*/
+
+.RightBread3 {
+    height: 55px;
+    width: 0;
+    border-width: 1px;
+    left: 148px;
+    top: 54px;
+    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+}
+
+
+/*嘴部*/
+
+.mouse {
+    width: 140px;
+    height: 70px;
+    background: dodgerblue;
+    border-radius: 0 0 70px 70px;
+    top: 120px;
+    left: 30px;
+    overflow: hidden;
+    -webkit-animation-name: MouseAni;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: MouseAni;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    animation-name: MouseAni;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+
+
+/*嘴部动画效果*/
+
+@-webkit-keyframes MouseAni {
+    50% {
+        height: 50px;
+    }
+}
+
+@-moz-keyframes MouseAni {
+    50% {
+        height: 50px;
+    }
+}
+
+@keyframes MouseAni {
+    50% {
+        height: 50px;
+    }
+}
+
+
+/*舌头*/
+
+.mouse .tongue {
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    -webkit-animation-name: TongueAni;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: TongueAni;
+    -moz-animation-duration: 4s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    animation-name: TongueAni;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 9;
+}
+
+
+/*舌头动画效果*/
+
+@-webkit-keyframes TongueAni {
+    50% {
+        top: 30px;
+    }
+}
+
+@-moz-keyframes TongueAni {
+    50% {
+        top: 30px;
+    }
+}
+
+@keyframes TongueAni {
+    50% {
+        top: 30px;
+    }
+}
+
+
+/*颈链*/
+
+.necklace {
+    height: 100px;
+    width: 154px;
+    border-radius: 100%;
+    background-color: red;
+    left: 124px;
+    top: 110px;
+    z-index: 1;
+}
+
+
+/*铃铛*/
+
+.ring {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    z-index: 2;
+    background-color: yellow;
+    top: 90px;
+    left: 67px;
+    overflow: hidden;
+    -webkit-animation-name: RingAni;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: RingAni;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    animation-name: RingAni;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+/*铃铛动画效果*/
+
+@-webkit-keyframes RingAni {
+    25% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    75% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+}
+
+@-moz-keyframes RingAni {
+    25% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    75% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes RingAni {
+    25% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    75% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+}
+
+
+/*铃铛上黑色横杠*/
+
+.RingDecoration1 {
+    width: 18px;
+    height: 0;
+    top: 6px;
+}
+
+
+/*铃铛下部*/
+
+.RingDecoration2 {
+    height: 10px;
+    width: 5px;
+    background-color: black;
+    border-radius: 100px;
+    top: 10px;
+    left: 6px;
+}

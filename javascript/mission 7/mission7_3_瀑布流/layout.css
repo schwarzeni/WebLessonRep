@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    min-width: 500px;
+}
+
+.picContainer {
+    width: 1088px;
+    margin: 0 auto;
+    height:auto;
+}
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.imgContent {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+.imgContent img {
+    width: 250px;
+    height: auto;
+}
+
+.title {
+    position: fixed;
+    height: 100%;
+    width: auto;
+    background-color: red;
+    right: 0;
+}

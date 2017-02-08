@@ -1,0 +1,113 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.outer{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    padding:10px;
+    margin: 10px;
+    transform:translate(100px,100px);
+}
+
+.inner{
+    height: 100%;
+    background-color: blue;
+    transform: rotate(45deg);
+    transform-origin: left top;
+    transform:skewX(-10deg);
+}
+
+.move{
+    width:100px;
+    height:100px;
+    background-color: brown;
+    margin: 110px;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.move:hover{
+    background-color:forestgreen;
+}
+
+.a1{
+    -webkit-transform:translate(60px);
+    -webkit-animation-name: animations;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:reverse;
+   
+}
+
+@-webkit-keyframes animations{
+    0%{
+        -webkit-transform:
+            translate(70px);
+        opacity: 0;
+    }
+    50%{
+        -webkit-transform: translate(40px);
+        opacity: 1;
+    }
+    70%{
+        -webkit-transform: translate(35px);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translate(0px);
+        opacity: 0;
+    }
+}
+
+span{
+    opacity:0;
+    display:block;
+    height:50px;
+    font:bold 14px/50px Georgia;
+    border:1px solid red;
+}
+.animationshow{
+    width:200px;
+    height:200px;
+    border:1px solid green;
+}
+
+.a2{
+    text-align: center;
+    font-size: 26px;
+    -webkit-animation-name: animation2;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animation2{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: .8;
+    }
+    45%{
+        opacity: .3;
+    }
+    50%{
+        opacity: .8;
+    }
+    55%{
+        opacity: .3;
+    }
+    60%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,90 @@
+    <!--
+    <div class="Triangle">
+        
+    </div>
+    
+    <div class="RightTriangle">
+        
+    </div>
+    <div class="Trapezoid">
+        
+    </div>
+    <div class="circle1">
+        
+    </div>
+    <div class="circle2">
+        
+    </div>
+    <div class="eclipse">
+        
+    </div>
+    <p class="break">
+        
+    </p>
+-->
+
+/*
+.Triangle{
+    border:50px solid red;
+    width:0px;
+    height:0px;
+    border-top-width: 0;
+    background-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color: forestgreen;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.RightTriangle{
+    border: 50px solid;
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: forestgreen;
+    border-bottom-color:transparent;
+    border-right-color: darkviolet;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.Trapezoid{
+    border: 50px solid;
+    width: 100px;
+    height: 0;
+    border-left-color:transparent;
+    border-bottom-color: forestgreen;
+    border-right-color:transparent;
+    border-top-color: darkslateblue;
+    border-top-width: 0;
+}
+
+.circle1{
+    border:50px solid red;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.circle2{
+    border:0;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+}
+
+.eclipse{
+    border: 0;
+    background-color: forestgreen;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.break{
+    clear: none;
+}
+*/

@@ -1,0 +1,200 @@
+    * {
+        background: #eee;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header nav {
+        position: absolute;
+        top: 230px;
+    }
+    
+    header nav:nth-child(1) {
+        display: none;
+    }
+    
+    header nav:nth-child(2) a {
+        width: 28px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0);
+    }
+    
+    header nav:nth-child(2) {
+        margin: 0 auto;
+        text-align: center;
+        left: 50%;
+        margin-left: -188px;
+    }
+    
+    header nav:nth-child(2) div {
+        padding: 0 15px;
+    }
+    
+    @media screen and (max-width:375px) {
+        header nav:nth-child(2) {
+            margin: 0 auto;
+            text-align: center;
+            left: 50%;
+            margin-left: -158px;
+        }
+        header nav:nth-child(2) div {
+            padding: 0 10px;
+        }
+    }
+    
+    .ns-icon {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin: 0 auto;
+        background: url(pic/mobi_nav.png) no-repeat;
+        background-size: 22px auto;
+    }
+    
+    .ns-text {
+        display: block;
+        height: 13px;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 13px;
+        line-height: 1;
+        color: #999;
+    }
+    
+    i.ns-focus {
+        background-position: 0 -264px;
+    }
+    
+    i.ns-news {
+        background-position: 0 -396px;
+    }
+    
+    i.ns-novel {
+        background-position: 0 -330px;
+    }
+    
+    i.ns-video {
+        background-position: 0 -462px;
+    }
+    
+    i.ns-nuomi {
+        background-position: 0 -418px;
+    }
+    
+    i.ns-map {
+        background-position: 0 -308px;
+    }
+    
+    header nav:nth-child(3) {
+        position: relative;
+        height: 35px;
+        margin-bottom: 9px;
+        top: 0;
+    }
+    
+    header nav:nth-child(3) div {}
+    
+    .pic {
+        background-image: url(pic/mobi_logo.png);
+        background-repeat: no-repeat;
+        background-size: 167px 50px;
+        width: 167px;
+        height: 57px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .pic img {
+        display: none;
+    }
+    
+    nav div {
+        display: inline-block;
+    }
+    
+    nav div ul {
+        display: none;
+    }
+    
+    article {
+        margin-top: 50px;
+    }
+    
+    form {
+        height: 45px;
+        padding: 0 3%;
+    }
+    
+    form .camera {
+        display: none;
+    }
+    
+    form #content {
+        height: 45px;
+        width: 75%;
+        border: 0;
+        background-color: #ffffff;
+        line-height: 28px;
+    }
+    
+    form #confirm {
+        height: 44px;
+        width: 25%;
+        margin-left: -10px;
+        border: 0;
+        background: #38f;
+        border-top: 1px solid #38f;
+        border-bottom: 1px solid #38f;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    footer .footleft,
+    .firstline {
+        display: none;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        padding: 6px 0 0;
+        color: #999;
+        left: 50%;
+        margin-left: -90px;
+        width: 180px;
+    }
+    
+    .thridline a {
+        text-decoration: none;
+        color: #999;
+    }
+    
+    .headIcon {
+        text-align: right;
+    }
+    
+    .icon-login:before {
+        content: '\e809';
+        color: #999;
+        font: 25px/1 icons;
+    }
+    
+    .icon-skin:before {
+        content: '\e824';
+        color: #999;
+        font: 25px/1 icons;
+    }
+    
+    @font-face {
+        font-family: 'icons';
+        src: url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_d62e2b18.eot);
+        src: url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_d62e2b18.eot#iefix) format('embedded-opentype'), url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_cc49e2cb.woff) format('woff'), url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_90ac37dc.ttf) format('truetype'), url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_36fbf316.svg#iconfont) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<section class="mainSectionWrapper">
+    <nav class="sideNavBar">
+        <ul>
+            <li>html&css</li>
+            <li>js</li>
+            <li>其它</li>
+            <li>回到顶部</li>
+        </ul>
+    </nav>
+    <section class="mainContentWrapper">
+        <div class="mainContent">
+            <div class="htmlcssContent">
+                <ul>
+                    <li>
+                        <div class="question">Doctype作用？标准模式与兼容模式各有什么区别?</div>
+                        <div class="answer">（1）、<!DOCTYPE>声明位于位于HTML文档中的第一行，处于 html
+                            标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。<br><br>(2）、标准模式的排版
+                            和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5 为什么只需要写 <!DOCTYPE HTML>？</div>
+                        <div class="answer">HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；
+
+                            而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+                        </div>
+                    </li>
+                    <li style="height:170px">
+                        <div class="question">行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</div>
+                        <div class="answer">
+                            首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>
+
+                            （1）行内元素有：a b span img input select strong（强调的语气）
+                            <br>（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+
+                            <br>（3）常见的空元素：
+                            < br> < hr> < img> < input> < link> < meta>
+                            鲜为人知的是：
+                            < area> < base> < col> < command> < embed> < keygen> < param> < source> < track> < wbr>
+
+                            <br> 不同浏览器（版本）、HTML4（5）、CSS2等实际略有差异
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">页面导入样式时，使用link和@import有什么区别？</div>
+                        <div class="answer">1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
+
+                            <br>? （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+
+                            <br> （3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">介绍一下你对浏览器内核的理解？</div>
+                        <div class="answer">主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。
+                            渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。
+
+                            <br> JS引擎则：解析和执行javascript来实现网页的动态效果。
+
+                            <br> 最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">简述一下你对HTML语义化的理解？</div>
+                        <div class="answer">
+                            用正确的标签做正确的事情。
+                            html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;<br>
+                            即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;<br>
+                            搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;<br>
+                            使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5的离线储存怎么使用，工作原理能不能解释一下？
+
+                        </div>
+                        <div class="answer">在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。
+                            原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</div>
+                        <div class="answer">
+                            在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。
+                            <br>离线的情况下，浏览器就直接使用离线存储的资源。
+                        </div>
+                    </li>
+                    <li style="height:300px">
+                        <div class="question">请描述一下 cookies，sessionStorage 和 localStorage 的区别？</div>
+                        <div class="answer">cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+                            cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
+                            sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。<br>
+
+                            存储大小：<br>
+                            cookie数据大小不能超过4k。
+                            sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
+
+                            <br> 有期时间：<br>
+                            localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；
+                            sessionStorage 数据在当前浏览器窗口关闭后自动删除。
+                            cookie 设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">iframe有那些缺点？
+
+                        </div>
+                        <div class="answer">*iframe会阻塞主页面的Onload事件；<br>
+                            *搜索引擎的检索程序无法解读这种页面，不利于SEO;<br>
+
+                            *iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。<br>
+
+                            使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>
+                            动态给iframe添加src属性值，这样可以绕开以上两个问题。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Label的作用是什么？是怎么用的？</div>
+                        <div class="answer">label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5的form如何关闭自动完成功能？
+
+                        </div>
+                        <div class="answer">给不想要提示的 form 或某个 input 设置为 autocomplete=off。</div>
+                    </li>
+                    <li>
+                        <div class="question">如何实现浏览器内多个标签页之间的通信?</div>
+                        <div class="answer">WebSocket、SharedWorker；<br>
+                            也可以调用localstorge、cookies等本地存储方式；
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">i与em的区别</div>
+                        <div class="answer">i内容展示为斜体，em表示强调的文本；</div>
+                    </li>
+                    <li>
+                        <div class="question">什么是HTML5？</div>
+                        <div class="answer">
+                            HTML5是最新的HTML标准，他的主要目标是提供所有内容而不需要任何的像flash，silverlight等的额外插件，这些内容来自动画，视频，富GUI等
+
+                            <br> HTML5是万维网联盟（W3C）和网络超文本应用技术工作组（WHATWG）之间合作输出的
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">如果我不放入<! DOCTYPE html> ，HTML5还会工作么？
+
+                        </div>
+                        <div class="answer">不会，浏览器将不能识别他是HTML文档，同时HTML5的标签将不能正常工作
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5的页面结构同HTML4或者更前的HTML有什么区别？</div>
+                        <div class="answer">一个典型的WEB页面包含头部，脚部，导航，中心区域，侧边栏。现在如果我们想在在HTML4的HTML区域中呈现这些内容，我们可能要使用DIV标签。
+
+                            <br>但是在HTML5中通过为这些区域创建元素名称使他们更加清晰，也使得你的HTML更加可读
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5中的datalist是什么？</div>
+                        <div class="answer">HTML5中的Datalist元素有助于提供文本框自动完成特性</div>
+                    </li>
+                    <li style="height:200px">
+                        <div class="question">HTML5中什么是不同的新的表单元素类型？</div>
+                        <div class="answer">Color
+                            <br>Date
+                            <br>Datetime-local
+                            <br>Email
+                            <br>Time
+                            <br>Url
+                            <br>Range
+                            <br>Telephone
+                            <br>Number
+                            <br>Search
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">HTML5中canvas是什么？</div>
+                        <div class="answer">Canvas是HTML中你可以绘制图形的区域
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Canvas和SVG图形的区别是什么？</div>
+                        <div class="answer">这个就好像绘制和记忆，换句话说任何使用SVG绘制的形状都能被记忆和操作，浏览器可以再次显示<br>Canvas就像绘制和忘记，一旦绘制完成你不能访问像素和操作它
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">除了 audio 和 video，HTML5 还有哪些媒体标签</div>
+                        <div class="answer">embed<br>source<br>track
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">什么是CSS的盒子模型？这里有哪些CSS属性？
+
+                        </div>
+                        <div class="answer">CSS盒模型的基本原则是理解布局和大小等。它主要由下面部分组成：<br>
+
+                            <br> width和height（或缺乏，默认值和里面的内容）
+                            <br>padding
+                            <br>border
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Sass、LESS和Stylus是什么？大家为什么要使用他们？如何使用Compass相关的Sass?</div>
+                        <div class="answer">
+                            他们是CSS预处理器。他是CSS上的一种抽象层。他们是一种特殊的语法/语言编译成CSS。他们使用CSS更容易管理，诸如变量、混合，以及用来处理前端（在其他事物之中）。他们容易做到最佳，像连接和压缩CSS。
+
+                            <br>了解他们的不同或使用他们的经验可以加分。理多的加分是知道如何使用像Compass，Bourbon，LESSHat，Nib等，以及了解他们是如何联系的。
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">描述一个"reset"的CSS文件并如何使用它。知道normalize.css吗？你了解他们的不同之处</div>
+                        <div class="answer">
+                            重置样式非常多，凡是一个前端开发人员肯定有一个常用的重置CSS文件并知道如何使用它们。他们是盲目的在做还是知道为什么这么做呢？原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。
+
+                            <br>你可能会用Normalize来代替你的重置样式文件。它没有重置所有的样式风格，但仅提供了一套合理的默认样式值。既能让众多浏览器达到一致和合理，但又不扰乱其他的东西（如粗体的标题）。
+
+                            <br>在这一方面，无法做每一个复位。它也确实有些超过一个重置，它处理了你永远都不用考虑的怪癖，像HTML的audio元素不一致或line-height不一致。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            什么是响应式设计？
+                        </div>
+                        <div class="answer">
+                            它是关于网站的制作或网页制作的工作。不同的设备有不同的尺寸和不同的功能。响应式设计是让所有的人能在这些设备上让网站运行正常。一部分是媒体查询和不同的视觉效果。一部分是不同的资源（如不同的Javascript来处理触摸与点击自动适应屏幕的对比）。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            SVG的好处是什么？
+                        </div>
+                        <div class="answer">
+                            是一种基于矢量的图像格式。这是一个有效的格式（文件小）。你可以对他们进行缩放和任何尺寸下保持清晰（提及到小尺寸下光栅占优势可以加分）。你可以使用CSS和JavaScript来修饰他们以及使用SVG指定的滤镜做很多事情，比如说模糊效果。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">你是负责编辑设计的，使用非标准的Web字体，你会怎么做？</div>
+                        <div class="answer">
+                            一个并非主要的方法@font-face，让他们谈论下它是如何工作的？谈论一下他如何是使用CSS技术以及谈论是如何服务，提供了体和让它变得更容易等等。Google字体，Typekit，Font
+                            Deck，Cloud Typography等等。著作权归作者所有。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">什么是CSS 预处理器 / 后处理器？</div>
+                        <div class="answer">- 预处理器例如：LESS、Sass、Stylus，用来预编译Sass或less，增强了css代码的复用性，
+                            还有层级、mixin、变量、循环、函数等，具有很方便的UI组件模块化开发能力，极大的提高工作效率。<br>
+
+                            - 后处理器例如：PostCSS，通常被视为在完成的样式表中根据CSS规范处理CSS，让其更有效；目前最常做的
+                            是给CSS属性添加浏览器私有前缀，实现跨浏览器兼容性的问题。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">对BFC规范的理解</div>
+                        <div class="answer">
+                            BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
+                            （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">解释下 CSS sprites，以及你要如何在页面或网站中使用它。</div>
+                        <div class="answer">CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background-
+                            repeat”，“background-position”的组合进行背景定位，background-position可以用数字能精确的定位出背景图片的位置。这样可以减少很多图片请求的开销，因为请求耗时比较长；请求虽然可以并发，但是也有限制，一般浏览器都是6个。对于未来而言，就不需要这样做了，因为有了`http2`。
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="jsContent">
+                <ul>
+                    <li style="height:200px">
+                        <div class="question">说几条写JavaScript的基本规范？</div>
+                        <div class="answer">1.不要在同一行声明多个变量。<br>
+                            2.请使用 ===/!==来比较true/false或者数值<br>
+                            3.使用对象字面量替代new Array这种形式<br>
+                            4.不要使用全局函数。<br>
+                            5.Switch语句必须带有default分支<br>
+                            6.函数不应该有时候有返回值，有时候没有返回值。<br>
+                            7.For循环必须使用大括号<br>
+                            8.If语句必须使用大括号<br>
+                            9.for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">JavaScript原型，原型链 ? 有什么特点？
+
+                        </div>
+                        <div class="answer">每个对象都会在其内部初始化一个属性，就是prototype(原型)，当我们访问一个对象的属性时，
+                            如果这个对象内部不存在这个属性，那么他就会去prototype里找这个属性，这个prototype又会有自己的prototype，
+                            于是就这样一直找下去，也就是我们平时所说的原型链的概念。
+                            关系：instance.constructor.prototype = instance.__proto__<br>
+
+                            特点：
+                            JavaScript对象是通过引用来传递的，我们创建的每个新对象实体中并没有一份属于自己的原型副本。当我们修改原型时，与之相关的对象也会继承这一改变。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">JavaScript有几种类型的值？，你能画一下他们的内存图吗？</div>
+                        <div class="answer">栈：原始数据类型（Undefined，Null，Boolean，Number、String）<br>
+                            堆：引用数据类型（对象、数组和函数）
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">javascript创建对象的几种方式？
+
+                        </div>
+                        <div class="answer">对象字面量的方式<br>
+                            用function来模拟无参的构造函数<br>
+                            用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）<br>
+                            用工厂方式来创建（内置对象）<br>
+                            用原型方式来创建<br>
+                            用混合方式来创建
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Javascript作用链域?</div>
+                        <div class="answer">全局函数无法查看局部函数的内部细节，但局部函数可以查看其上层的函数细节，直至全局细节。<br>
+                            当需要从局部函数查找某一属性或方法时，如果当前作用域没有找到，就会上溯到上层作用域查找，<br>
+                            直至全局函数，这种组织形式就是作用域链。</div>
+                    </li>
+                    <li>
+                        <div class="question">谈谈This对象的理解。</div>
+                        <div class="answer">this总是指向函数的直接调用者（而非间接调用者）；<br>
+                            如果有new关键字，this指向new出来的那个对象；<br>
+                            在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window；
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">什么是window对象? 什么是document对象?</div>
+                        <div class="answer">window对象是指浏览器打开的窗口。<br>
+                            document对象是Documentd对象（HTML 文档对象）的一个只读引用，window对象的一个属性。</div>
+                    </li>
+                    <li>
+                        <div class="question">null，undefined 的区别？
+
+                        </div>
+                        <div class="answer">null        表示一个对象是“没有值”的值，也就是值为“空”；<br>
+                            undefined   表示一个变量声明了没有初始化(赋值)；</div>
+                    </li>
+                    <li>
+                        <div class="question">事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+
+                        </div>
+                        <div class="answer"> 1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。
+                            <br>2. 事件处理机制：IE是事件冒泡、Firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件；<br>
+                            3. ev.stopPropagation();（旧ie的方法 ev.cancelBubble = true;）</div>
+                    </li>
+                    <li>
+                        <div class="question">什么是闭包（closure），为什么要用它？</div>
+                        <div class="answer">闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外部。<br>闭包的特性：
+
+                            1.函数内再嵌套函数<br>
+                            2.内部函数可以引用外层的参数和变量<br>
+                            3.参数和变量不会被垃圾回收机制回收
+                        </div>
+                    </li>
+                    <li style="height:200px">
+                        <div class="question">javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
+
+                        </div>
+                        <div class="answer">use strict是一种ECMAscript 5 添加的（严格）运行模式,这种模式使得 Javascript 在更严格的条件下运行,
+
+                            使JS编码更加规范化的模式,消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为。<br>
+                            默认支持的糟糕特性都会被禁用，比如不能用with，也不能在意外的情况下给全局变量赋值;<br>
+                            全局变量的显示声明,函数必须声明在顶层，不允许在非函数代码块内声明函数,arguments.callee也不允许使用；<br>
+                            消除代码运行的一些不安全之处，保证代码运行的安全,限制函数中的arguments修改，严格模式下的eval函数的行为和非严格模式的也不相同;<br>
+
+                            提高编译器效率，增加运行速度；<br>
+                            为未来新版本的Javascript标准化做铺垫。</div>
+                    </li>
+                    <li>
+                        <div class="question">new操作符具体干了什么呢?</div>
+                        <div class="answer">1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。<br>
+                            2、属性和方法被加入到 this 引用的对象中。<br>
+                            3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。</div>
+                    </li>
+                    <li>
+                        <div class="question">JSON 的了解？</div>
+                        <div class="answer">JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
+                            它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小
+                            如：{"age":"12", "name":"back"}</div>
+                    </li>
+                    <li>
+                        <div class="question">js延迟加载的方式有哪些？
+
+                        </div>
+                        <div class="answer">defer和async、动态创建DOM方式（用得最多）、按需异步载入js</div>
+                    </li>
+                    <li>
+                        <div class="question">Ajax 是什么? 如何创建一个Ajax？
+
+                        </div>
+                        <div class="answer">ajax的全称：Asynchronous Javascript And XML。<br>
+                            异步传输+js+xml。<br>
+                            所谓异步，在这里简单地解释就是：向服务器发送请求的时候，我们不必等待结果，而是可以同时做其他的事情</div>
+                    </li>
+                    <li>
+                    <div class="question">Object.is() 与原来的比较操作符“ ===”、“ ==”的区别？</div>
+                        <div class="answer">两等号判等，会在比较时进行类型转换；
+                            三等号判等(判断严格)，比较时不进行隐式类型转换,（类型不同则会返回false）；<br>
+
+                            Object.is 在三等号判等的基础上特别处理了 NaN 、-0 和 +0 ，保证 -0 和 +0 不再相同，
+                            但 Object.is(NaN, NaN) 会返回 true.<br>
+
+                            Object.is 应被认为有其特殊的用途，而不能用它认为它比其它的相等对比更宽松或严格。</div>
+                    </li>
+                    <li>
+                        <div class="question">Javascript中callee和caller的作用？</div>
+                        <div class="answer">caller是返回一个对函数的引用，该函数调用了当前函数；<br>
+
+                            callee是返回正在被执行的function函数，也就是所指定的function对象的正文。</div>
+                    </li>
+                    <li>
+                        <div class="question">如何判断当前脚本运行在浏览器还是node环境中？</div>
+                        <div class="answer">通过判断Global对象是否为window，如果不为window，当前脚本没有运行在浏览器中</div>
+                    </li>
+                    <li>
+                        <div class="question">document.write 和 innerHTML 有何区别？</div>
+                        <div class="answer">document.write 只能重绘整个页面
+                           <br> innerHTML 可以重绘页面的一部分</div>
+                    </li>
+                    <li>
+                        <div class="question">apply和call方法的异同？</div>
+                        <div class="answer">对于apply和call两者在作用上是相同的，即是调用一个对象的一个方法，以另一个对象替换当前对象。将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。<br>
+
+                            但两者在参数上有区别的。对于第一个参数意义都一样，但对第二个参数： apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。 如 func.call(func1,var1,var2,var3)对应的apply写法为：func.apply(func1,[var1,var2,var3]) 。</div>
+                    </li>
+                    <li>
+                        <div class="question">在Javascript中什么是伪数组？如何将伪数组转化为标准数组</div>
+                        <div class="answer">伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="otherContent">
+               <ul>
+                    <li style="height:400px">
+                        <div class="question">MVC、MVVM</div>
+                        <div class="answer">
+                            <dl>
+                                <dt>MVC</dt>
+                                <dd>模型（Model）：数据保存<br>
+                                    视图（View）：用户界面<br>
+                                    控制器（Controller）：业务逻辑<br>
+                                    (1)View 传送指令到 Controller<br>
+                                    (2)Controller 完成业务逻辑后，要求 Model 改变状态<br>
+                                    (3)Model 将新的数据发送到 View ，用户得到反馈
+                                    所有通信都是单向的。</dd>
+                            </dl><br><br>
+                            <dl>
+                                <dt>MVVM</dt>
+                                <dd>模型（Model）<br>
+                                    视图（View）<br>
+                                    视图模型（ViewModel）<br>
+                                    (1)各部分间都是双向通信<br>
+                                    (2)View 与 Model 不发生联系，都通过 ViewModel 传递<br>
+                                    (3)View 非常薄，不部署任何业务逻辑，称为“被动视图”（Passive View），即没有任何主动性；而 ViewModel 非常厚，所有逻辑都部署在那里
+                                    采用双向绑定（data-binding）：View 的变动，自动反映在 ViewModel ，反之亦然。</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">什么叫优雅降级和渐进增强？</div>
+                        <div class="answer">优雅降级：
+                            Web站点在所有新式浏览器中都能正常工作，如果用户使用的是老式浏览器，则代码会针对旧版本的IE进行降级处理了,使之在旧式浏览器上以某种形式降级体验却不至于完全不能用。
+                            如：border-shadow
+                            <br>
+                            渐进增强：
+                            从被所有浏览器支持的基本功能开始，逐步地添加那些只有新版本浏览器才支持的功能,向页面增加不影响基础浏览器的额外样式和功能的。当浏览器支持时，它们会自动地呈现出来并发挥作用。
+                            如：默认使用flash上传，但如果浏览器支持 HTML5 的文件上传功能，则使用HTML5实现更好的体验；</div>
+                    </li>
+                    <li>
+                        <div class="question">是否了解公钥加密和私钥加密？</div>
+                        <div class="answer">一般情况下私钥用于对数据进行签名，公钥用于对签名进行验证；<br>
+                            HTTP网站在浏览器端用公钥加密敏感数据，然后在服务器端再用私钥解密。</div>
+                    </li>
+                    <li>
+                        <div class="question">Web应用从服务器主动推送Data到客户端有哪些方式？</div>
+                        <div class="answer">HTML5提供的WebSocket<br>
+                            不可见的iframe<br>
+                            WebSocket通过Flash<br>
+                            XHR长时间连接<br>
+                            XHR Multipart Streaming<br>
+                            < script>标签的长时间连接（可跨域）</div>
+                    </li>
+                    <li style="height:400px">
+                        <div class="question">你用过哪些前端性能优化的方法？</div>
+                        <div class="answer">(1)减少http请求次数：CSS Sprites,JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。<br>
+                            (2)前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数.<br>
+                            (3)用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。<br>
+                            (4)当需要设置的样式很多时设置className而不是直接操作style。<br>
+                            (5)少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。<br>
+                            (6)避免使用CSS Expression（css表达式)又称Dynamic <br>properties(动态属性)。<br>
+                            (7)图片预加载，将样式表放在顶部，将脚本放在底部  加上时间戳。<br>
+                            (8)避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。<br>
+                            //
+                            对普通网站有一个统一的思路，就是尽量向前端优化、减少数据库请求、减少磁盘I/O。<br>
+                            向前端优化指的是，在不影响功能和体验的情况下，能在浏览器执行的不要在服务端执行，能在缓存服务器上直接返回的不要到应用服务器，程序能直接取得的结果不要到外部取得，本机内能取得的数据不要到远程取，内存能取到的不要到磁盘取，缓存中有的不要去数据库查询。减少数据库操作指减少更新次数、缓存结果减少查询次数、将数据库执行的操作尽可能的让你的程序完成（例如join查询），减少磁盘IO指尽量不使用文件系统作为缓存、减少读写文件次数等。程序优化永远要优化慢的部分，换语言是无法“优化”的。</div>
+                    </li>
+                   <li style="height:300px">
+                       <div class="question">对前端工程师这个职位是怎么理解的？它的前景怎么样？</div>
+                       <div class="answer">前端是最贴近用户的开发人员，比后端、数据库、产品经理、经营、安全都近。<br>
+                           (1)实现界面交互<br>
+                           (2)提升用户体验<br>
+                           (3)有了 Node.js ，前端可以实现服务器端的一些事情<br>
+                           //
+                           前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好。<br>
+                           参与项目，快速高质量完成实现效果图，精确到1px；<br>
+                           与团队成员，UI设计，产品经理的沟通；<br>
+                           做好的页面结构，页面重构和用户体验；<br>
+                           处理hack，兼容、写出优美的代码格式；<br>
+                           针对服务器的优化、拥抱最新前端技术。<br>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="question">移动端（Android iOS）怎么做好用体验？</div>
+                       <div class="answer">清晰的视觉纵线<br>
+                           信息的分组、极致的减法<br>
+                           利用选择代替输入<br>
+                           标签及文字的排布方式<br>
+                           依靠明文确认密码<br>
+                           合理的键盘利用<br></div>
+                   </li>
+                   <li>
+                       <div class="question">谈谈你对 “全端工程师” 和 “全栈工程师” 的理解。</div>
+                       <div class="answer">全端是横向的，全栈是纵向的。<br>
+                           //
+                           全端即所有的终端说白了都是前端，因为都关乎到用户体验，直接和用户接触。适应多终端的开发，要求你在web前端的基础上，可能还要扩展Android开发和iOS开发的知识，好在由于hybrid开发方式的流行，对使用native语言开发的技能会要求的不那么深。<br>
+                           全栈可以说是最适合初创公司的一种发展类型，广义上认为是从前端干到后端，从开发干到运维；而狭义上的全栈特指使用js语言从前端写到假设在NodeJS上的后端，前后端统一语言，统一编程模型，甚至共用同一套代码。</div>
+                   </li>
+                   <li>
+                       <div class="question">平时如何管理你的项目？</div>
+                       <div class="answer">先期团队必须确定好全局样式（globe.css），编码模式(utf-8) 等；<br>
+
+                           编写习惯必须一致（例如都是采用继承式的写法，单样式都写成一行）；<br>
+
+                           标注样式编写人，各模块都及时标注（标注关键样式调用的地方）；
+<br>
+                           页面进行标注（例如 页面 模块 开始和结束）；
+<br>
+                           CSS跟HTML 分文件夹并行存放，命名都得统一（例如style.css）；
+<br>
+                           JS 分文件夹存放 命名以该JS功能为准的英文翻译。
+<br>
+                           图片采用整合的 images.png png8 格式文件使用 尽量整合在一起使用方便将来的管理</div>
+                   </li>
+
+               </ul>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/fun.js"></script>
+</body>
+</html>

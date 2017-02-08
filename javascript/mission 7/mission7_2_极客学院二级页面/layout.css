@@ -1,0 +1,1878 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    min-width: 1100px;
+}
+
+
+/**********************************/
+
+
+/*顶部导航栏开始*/
+
+
+/*顶部导航栏整体样式*/
+
+.headNav {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+    position: relative;
+}
+
+
+/*顶部导航栏整体定位*/
+
+.headNavWrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+/*顶部导航栏各个部分div整体样式*/
+
+.headNavWrapper div {
+    display: inline-block;
+    float: left;
+}
+
+
+/*顶部导航栏左侧Logo定位*/
+
+.headNavWrapper .mainLogo {
+    margin-top: 10px;
+}
+
+
+/*顶部导航栏左侧Logo图片大小设定*/
+
+.headNavWrapper .mainLogo img {
+    width: 109px;
+    height: 40px;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单选项*/
+
+.navLeftMenu {
+    width: 500px;
+    height:60px;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单整体定位*/
+
+.navLeftMenu ul {
+    margin-top: 10px;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单选项整体样式*/
+
+.navLeftMenu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 35px;
+    margin-top: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单选项旋转箭头*/
+
+.navLeftMenu ul li span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 10px;
+    border-left: 1px solid #c1c1c1;
+    border-top: 1px solid #c1c1c1;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单选项鼠标悬浮时旋转箭头*/
+
+.navLeftMenu ul li:hover span {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-duration: 1s;
+    transition-duration: .5s;
+    border-left: 1px solid #35b335;
+    border-top: 1px solid #35b335;
+}
+
+
+/*顶部导航栏左侧课程下拉菜单选项鼠标悬浮时颜色改变*/
+
+.navLeftMenu ul li:hover {
+    color: #35b338;
+}
+
+
+/*顶部导航栏右侧选项定位*/
+
+.navRightMenu {
+    width: 391px;
+    height: 60px;
+}
+
+
+/*顶部导航栏右侧选项各个部分整体样式*/
+
+.navRightMenu div {
+    display: inline-block;
+    width: 18px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 23px;
+}
+
+
+/*顶部导航栏右侧第一个选项添加图标*/
+
+.navRightRearch {
+    background: url(img/navImg/search-icon.png) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 17px 17px;
+}
+
+
+/*顶部导航栏右侧第一个选项悬浮时改变图标*/
+
+.navRightRearch:hover {
+    background: url(img/navImg/search-iconHover.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0 0;
+}
+
+
+/*顶部导航栏右侧第二个选项添加图标*/
+
+.navRightAppDownload {
+    background: url(img/navImg/app-icon.png) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 17px 17px;
+}
+
+
+/*顶部导航栏右侧第二个选项悬浮时改变图标*/
+
+.navRightAppDownload:hover {
+    background: url(img/navImg/app-iconHover.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0 0;
+}
+
+
+/*顶部导航栏右侧第三个选项添加图标*/
+
+.navRightLoge {
+    background: url(img/navImg/login-icon.png) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 17px 17px;
+}
+
+
+/*职业学院下拉菜单开始*/
+
+
+/*职业学院下拉菜单开始*/
+
+.headNavDownMenu_zhiyexueyuan_list {
+    width: 280px;
+    position: absolute;
+    margin-top: 21px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 0px;
+    height: 290px;
+    z-index: 100;
+}
+
+
+/*鼠标未悬浮时隐藏样式*/
+
+#headNavDownMenu_zhiyexueyuan_list {
+    display: none;
+}
+
+
+/*职业学院下拉菜单小标题样式*/
+
+.headNavDownMenu_zhiyexueyuan_list h3 {
+    color: #666;
+    font-size: 13px;
+    background-color: #fafafa;
+    padding-left: 10px;
+}
+
+
+/*职业学院下拉菜单具体项目样式*/
+
+.headNavDownMenu_zhiyexueyuan_list a {
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-size: 12px;
+}
+
+.headNavDownMenu_zhiyexueyuan_list a:hover {
+    color: #35b558;
+}
+
+
+/*职业学院下拉菜单具体项目小图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+
+/*职业学院下拉菜单 Web前端工程师图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a:nth-child(2) i {
+    background: url(img/navImg/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -15px -27px;
+}
+
+
+/*职业学院下拉菜单 微信小程序工程师图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a:nth-child(3) i {
+    background: url(img/navImg/allicon4.png) 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -60px;
+}
+
+
+/*职业学院下拉菜单 Python Web工程师图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a:nth-child(5) i {
+    background: url(img/navImg/allicon4.png) 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -2px;
+}
+
+
+/*职业学院下拉菜单 Go语言工程师图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a:nth-child(6) i {
+    background: url(img/navImg/allicon4.png) 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -38px;
+}
+
+
+/*职业学院下拉菜单 iOS工程师图标*/
+
+.headNavDownMenu_zhiyexueyuan_list a:nth-child(8) i {
+    background: url(img/navImg/allicon4.png) 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -82px;
+}
+
+
+/*职业学院下拉菜单结束*/
+
+
+/*会员课程下拉菜单开始*/
+
+
+/*会员课程下拉菜单整体样式*/
+
+.headNavDownMenu_huiyuankecheng {
+    margin-top: 21px;
+    position: absolute;
+    padding-left: 0;
+    background-color: #fff;
+    z-index: 500;
+}
+
+#headNavDownMenu_huiyuankecheng {
+    display: none;
+}
+
+
+/*会员课程下拉菜单各个栏目样式*/
+
+.headNavDownMenu_huiyuankecheng a {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: 0;
+    color: #555;
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*会员课程下拉菜单各个栏目悬浮样式*/
+
+.headNavDownMenu_huiyuankecheng a:hover {
+    color: #35b358;
+}
+
+
+/*会员课程下拉菜单首部距离导航栏的高度*/
+
+.headNavDownMenu_huiyuankecheng a:nth-child(1) {
+    margin-top: 10px
+}
+
+
+/*会员课程下拉菜单各个栏目左侧小图标*/
+
+.headNavDownMenu_huiyuankecheng a i {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(img/navImg/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+}
+
+
+/*会员课程下拉菜单各个栏目左侧小图标*/
+
+
+/*课程库图标*/
+
+#kechengku i {
+    background-position: 0 -13px;
+}
+
+
+/*职业路径图图标*/
+
+#zhiyelujin i {
+    background-position: -45px 0;
+}
+
+
+/*知识体系图图标*/
+
+#zhishitixi i {
+    background-position: -30px -13px;
+}
+
+
+/*系列课程图标*/
+
+#xiliekecheng i {
+    background: url(img/navImg/xlkc2.png)0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+
+
+/*课程标签图标*/
+
+#kechengbiaoqian i {
+    background-position: -15px -13px;
+}
+
+
+/*VIP购买图标*/
+
+#VIPgoumai i {
+    background-position: -16px 0;
+}
+
+
+/*会员课程下拉菜单右侧的统计数据的样式*/
+
+.headNavDownMenu_huiyuankecheng a div {
+    display: inline-block;
+    float: right;
+    border: 0;
+    color: #bbb;
+    font-size: 12px;
+}
+
+
+/*会员课程下拉菜单结束*/
+
+
+/*极客社区下拉菜单开始*/
+
+
+/*极客社区下拉菜单整体定位*/
+
+.headNavDownMenu_jikeshequ {
+    position: absolute;
+    margin-top: 21px;
+    background-color: #fff;
+    z-index: 500;
+}
+
+
+/*鼠标未悬浮时隐藏极客社区菜单菜单*/
+
+#headNavDownMenu_jikeshequ {
+    display: none;
+}
+
+
+/*极客社区下拉菜单整体样式*/
+
+.headNavDownMenu_jikeshequ a {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: 0;
+    color: #555;
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*极客社区下拉菜单右侧数据的定位*/
+
+.headNavDownMenu_jikeshequ a div {
+    float: right;
+}
+
+
+/*极客社区下拉菜单字体悬浮样式*/
+
+.headNavDownMenu_jikeshequ a:hover {
+    color: #35b358;
+}
+
+
+/*极客社区下拉菜单各个栏目左侧小图标*/
+
+.headNavDownMenu_jikeshequ a i {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(img/navImg/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+}
+
+
+/*技术问答小图标*/
+
+#jishuwenda i {
+    background-position: 0 -27px;
+}
+
+
+/*Wiki小图标*/
+
+#Wiki i {
+    background-position: -29px -27px;
+}
+
+
+/*社群小图标*/
+
+#shequn i {
+    background-position: 0 2px;
+}
+
+
+/*资源下载小图标*/
+
+#ziyuanxiazai i {
+    background-position: -30px 0;
+}
+
+
+/*极客社区下拉菜单结束*/
+
+
+/*顶部搜索框开始*/
+
+#navRearchBarWrapper {
+    width: 0px;
+    float: right;
+    height: 40px;
+    background-image: url(#);
+    background-color: #fff;
+    margin-top: -15px;
+    margin-right: -100px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#navRearchBarWrapper * {
+    display: inline-block;
+    line-height: 40px;
+}
+
+
+/*顶部搜索框左部图标*/
+
+.navRearchBarWrapperLeftIcon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+
+/*顶部搜索框右部图标*/
+
+.navRearchBarWrapperRightIcon {
+    width: 14px;
+    height: 14px;
+    float: right;
+    background: url(img/navImg/close-icon.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+
+/*顶部搜索框搜索栏目*/
+
+.navRearchBar {
+    margin-left: 5px;
+    width: 500px;
+    height: 20px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+
+/*顶部搜索框右侧三个图标样式*/
+
+#navRearchBarWrapper a {
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    float: right;
+    height: 16px;
+    line-height: 16px;
+}
+
+
+/*顶部搜索框结束*/
+
+
+/*扫面二维码下载app开始*/
+
+.headNavDownMenu_appDownload {
+    width: 120px!important;
+    height: 160px!important;
+    display: block;
+    background: url(img/navImg/heade-rwm.png);
+    background-size: 120px 160px;
+    position: absolute;
+    top: 35px;
+    margin-left: -53px;
+    z-index: 1000;
+}
+
+#headNavDownMenu_appDownload {
+    display: none;
+}
+
+.headNavDownMenu_array {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-left: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    margin-top: -5px;
+    margin-left: 54px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*扫面二维码下载app结束*/
+
+
+/*极客学院登录&个人信息框开始*/
+
+
+/*极客学院登录&个人信息框整体样式定位*/
+
+#headNavDownMenu_usrInfo {
+    width: 120px;
+    height: 185px;
+    margin-top: 33px;
+    margin-right: -10px;
+    background-color: #fff;
+    z-index: 5000;
+    display: none;
+    position: relative;
+}
+
+
+/*极客学院登录&个人信息框具体位置与样式设定*/
+
+#headNavDownMenu_usrInfo div {
+    width: 120px;
+    height: 35px;
+    margin: 1px 0;
+    font-size: 13px;
+    line-height: 35px;
+    vertical-align: middle;
+    z-index: 5000;
+}
+
+#headNavDownMenu_usrInfo div:nth-child(2) {
+    text-align: center;
+}
+
+
+/*极客学院登录&个人信息框顶部箭头*/
+
+.headNavDownMenu_array_usrInfo {
+    margin-left: 95px!important;
+    margin-top: -9px;
+}
+
+
+/*极客学院登录&个人信息框字体设置*/
+
+#logo,
+#sign {
+    width: 30px!important;
+}
+
+#headNavDownMenu_usrInfo div a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    height: 40px;
+    display: inline-block;
+    width: 80px;
+}
+
+
+/*鼠标悬浮效果*/
+
+#headNavDownMenu_usrInfo div:hover {
+    background-color: #f5f5f5;
+}
+
+#headNavDownMenu_usrInfo div a:hover {
+    color: #35b558;
+}
+
+
+/*极客学院登录&个人信息框左侧小图标整体样式*/
+
+#headNavDownMenu_usrInfo div i {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(img/navImg/allicon2.png);
+    background-size: 64px 64px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+
+/*学习中心图标*/
+
+#headNavDownMenu_usrInfo div:nth-child(3) i {
+    background-position: -16px -15px;
+}
+
+
+/*个人主页*/
+
+#headNavDownMenu_usrInfo div:nth-child(4) i {
+    background-position: -45px -1px;
+}
+
+
+/*消息通知*/
+
+#headNavDownMenu_usrInfo div:nth-child(5) i {
+    background-position: -16px -30px;
+}
+
+
+/*账号设置*/
+
+#headNavDownMenu_usrInfo div:nth-child(6) i {
+    background-position: -30px -1px;
+}
+
+
+/*极客学院登录&个人信息框结束*/
+
+
+/*顶部导航栏结束*/
+
+
+/*****************************************/
+
+
+/*****************************************/
+
+
+/*主体部分开始*/
+
+.mainBodyWrapper {
+    margin-top: 20px;
+    position: relative;
+    height: 1500px;
+}
+
+.mainBodyContainer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*主体部分左部菜单开始*/
+
+.mainBodySideMenu {
+    width: 240px;
+    display: inline-block;
+    margin-right: -20px;
+    float: left;
+}
+
+
+/*左部菜单课程主列表开始*/
+
+.mainBodySideMenu_lessonMainMenuWrapper {
+    width: 210px;
+    height: 425px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #35b358;
+}
+
+.menuHead {
+    height: 20px;
+    padding-left: 20px;
+}
+
+.menuHead a {
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #35b335;
+}
+
+
+/*课程库图标*/
+
+.menuHeadIcon {
+    background: url(img/mainBodyImg/icon-course-curr.png) no-repeat 0 0/ 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+
+/*课程库主菜单样式设定*/
+
+.mainBodySideMenu_lessonMainMenu ul {
+    padding-left: 0;
+}
+
+.mainBodySideMenu_lessonMainMenu ul li {
+    width: 190px;
+    list-style: none;
+    height: 38px;
+    line-height: 38px;
+    font-size: 13px;
+    color: #555;
+    padding-left: 20px;
+    background: url(img/mainBodyImg/icon-more.png)186px center no-repeat;
+    background-size: 6px 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+/*课程库主菜单悬浮样式设定*/
+
+.mainBodySideMenu_lessonMainMenu ul li:hover {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    color: #35b358;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding-left: 24px;
+    background: url(#);
+}
+
+
+/*鼠标悬浮于主目录上时显示对应子目录*/
+
+.mainBodySideMenu_lessonMainMenu ul li:hover div {
+    display: block;
+}
+
+
+/*只有鼠标悬浮于子目录上时子目录才显示*/
+
+
+/*子目录整体样式*/
+
+.lessonSubMenu {
+    width: 400px;
+    position: absolute;
+    margin-left: 185px;
+    background-color: #fff;
+    min-height: 427px;
+    border: 1px solid #ddd;
+    display: none;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    line-height: 30px;
+    z-index: 3000;
+}
+
+
+/************课程子目录定位开始************/
+
+
+/*移动开发子目录*/
+
+.mobileDevLesson {
+    margin-top: -76px;
+}
+
+
+/*前端开发子目录*/
+
+.webDevLesson {
+    margin-top: -115px;
+}
+
+
+/*后端开发子目录*/
+
+.severDevLesson {
+    margin-top: -154px;
+}
+
+
+/*基础知识子目录*/
+
+.basicLesson {
+    margin-top: -193px;
+}
+
+
+/*云计算&大数据子目录*/
+
+.cloudDevLesson {
+    margin-top: -232px;
+}
+
+
+/*智能硬件&物联网子目录*/
+
+.intelHardware {
+    margin-top: -271px;
+}
+
+
+/*数据库子目录*/
+
+.databaseDevLesson {
+    margin-top: -310px;
+}
+
+
+/*认证考试子目录*/
+
+.examLesson {
+    margin-top: -349px;
+}
+
+
+/*企业IT子目录*/
+
+.businessLesson {
+    margin-top: -388px;
+}
+
+
+/*设计产品测试子目录*/
+
+.productLesson {
+    margin-top: -427px;
+}
+
+
+/************课程子目录定位结束************/
+
+
+/*课程子目录内容样式开始*/
+
+.lessonSubMenu h3 {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #f5f5f5;
+    margin: 5px 0 1px 0;
+    width: 150px;
+}
+
+.lessonSubMenu a {
+    text-decoration: none;
+    color: #666;
+    padding: 0 10px;
+    border-left: 1px solid #f5f5f5;
+    margin: 0 0 0 -1px;
+}
+
+.lessonSubMenu *:hover {
+    color: #35b358;
+}
+
+
+/*课程子目录内容样式结束*/
+
+
+/*左部菜单课程主列表结束*/
+
+
+/*左边菜单其他栏目表开始*/
+
+.otherLesson {
+    margin: 0;
+    width: 202px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+
+/*左边菜单其他栏目表条目样式*/
+
+.otherLesson li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+}
+
+
+/*悬浮样式*/
+
+.otherLesson li:hover {
+    background-color: #fafafa;
+}
+
+
+/*悬浮样式*/
+
+.otherLesson li:hover a {
+    color: #35b358;
+    background: url(img/mainBodyImg/img-seeall.png) no-repeat 160px center;
+    background-size: 40px 10px;
+}
+
+
+/*左边菜单其他栏目表条目字体样式*/
+
+.otherLesson a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/*左边菜单其他栏目左侧小图标*/
+
+.otherLesson a i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+
+/*职业路径图图标*/
+
+.otherLesson_zylj i {
+    background: url(img/mainBodyImg/icon-zylj.png) no-repeat left center;
+    background-size: 15px 14px;
+}
+
+
+/*知识体系图图标*/
+
+.otherLesson_zstx i {
+    background: url(img/mainBodyImg/icon-zstx.png) no-repeat left center;
+    background-size: 15px 12.5px;
+}
+
+
+/*系列课程图标*/
+
+.otherLesson_kclb i {
+    background: url(img/mainBodyImg/icon-kcbq.png) no-repeat left center;
+    background-size: 14px 14px;
+}
+
+
+/*课程标签图标*/
+
+.otherLesson_kcbq i {
+    background: url(img/mainBodyImg/icon-kcbq.png) no-repeat left center;
+    background-size: 15px 13px;
+}
+
+
+/*左边菜单其他栏目表结束*/
+
+
+/*主体部分左部菜单结束*/
+
+
+/*主体部分右部目录开始*/
+
+.mainBodyRightWrapper {
+    background-color: #f5f5f5;
+    height: 1500px;
+    width: 765px;
+    display: inline-block;
+    float: left;
+    /*    margin-left: 230px;*/
+}
+
+
+
+/*右侧菜单筛选开始*/
+
+.lessonSortWrapper {
+    display: block;
+    height: 40px;
+    margin-top: -15px;
+    line-height: 40px;
+    background-color: #fff;
+}
+
+.lessonSortWrapper ul {
+    padding: 0;
+}
+
+.lessonSortWrapper ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    width: 80px;
+    text-align: center;
+    float: left;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.lessonSortWrapper ul li:nth-child(1) {
+    border-right: 1px solid #eeeeee;
+}
+
+
+/*右侧菜单筛选每个选项框右侧箭头*/
+
+.lessonSortWrapper ul li span {
+    margin-left: 9px;
+    margin-top: 12px;
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.lessonSortWrapper ul li:hover span {
+    display: none;
+}
+
+
+/*变换菜单样式按键设置开始*/
+
+#rightMenuChange1,
+#rightMenuChange2 {
+    display: inline-block;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border-left: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+#rightMenuChange1 i,
+#rightMenuChange2 i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+#rightMenuChange1 i {
+    margin-top: 11px;
+    margin-left: 11px;
+    background: url(img/mainBodyImg/icon-kuai.png)no-repeat 0 0;
+    background-size: 15px;
+}
+
+#rightMenuChange2 i {
+    margin-top: 13px;
+    margin-left: 10px;
+    background: url(img/mainBodyImg/icon-list.png)0 0 no-repeat;
+    background-size: 16px 12px;
+}
+
+.lessonSortWrapper ul li div ul {
+    margin-left: -10px;
+    padding: 0;
+    margin-top: -10px;
+    padding-top: 10px;
+    position: absolute;
+    width: 102px;
+}
+
+.lessonSortWrapper ul li div ul li {
+    background-color: #fff;
+    width: 80px;
+    padding-left: 21px!important;
+    padding-right: 0!important;
+    text-align: justify;
+    /*    display: none;*/
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+    /*    visibility:hidden;*/
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.lessonSortWrapper ul li div ul li:hover {
+    color: #35b358;
+}
+
+.lessonSortWrapper ul li:hover div ul {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+}
+
+.lessonSortWrapper ul li:hover div ul li {
+    /*   visibility:visible;*/
+    height: 40px;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+/*变换菜单样式按键设置结束*/
+
+
+/*右侧菜单筛选结束*/
+
+
+/*右侧菜单**块状**显示开始*/
+
+.righMenuBlockStyleWrapper ul {
+    padding: 0;
+}
+
+.righMenuBlockStyleWrapper ul li {
+    display: inline-block;
+    width: 250px;
+    height: 225px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 5px;
+    position: relative;
+}
+
+
+/*块状菜单上部图片样式开始*/
+
+.blockMenuPic {
+    width: 250px;
+    height: 135px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.blockMenuPic img {
+    width: 100%;
+    height: 135px;
+}
+
+.blockMenuPic .lessonPlay {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.righMenu ul li:hover .lessonPlay {
+    opacity: 1;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.lessonPlay i {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(img/mainBodyImg/player_icon.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+
+
+/*块状菜单上部图片样式结束*/
+
+.blockMenuIntro {
+    width: 240px;
+    height: 90px;
+    background-color: #fff;
+    padding: 0 5px;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.blockMenuIntro h3 {
+    display: inline-block;
+    margin: 0;
+    width: 240px;
+}
+
+
+/*标题样式*/
+
+.blockMenuIntro h3 a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+/*简要介绍样式*/
+
+.blockMenuIntro p {
+    color: #808080;
+    font-size: 12px;
+    margin-top: 15px;
+    height:0;
+    overflow: hidden;
+/*
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+*/
+}
+
+.righMenuBlockStyleWrapper ul li:hover .blockMenuIntro {
+    height: 160px;
+    z-index: 500;
+    position: relative;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+}
+
+.righMenuBlockStyleWrapper ul li:hover .blockMenuIntro p {
+    height:35px;
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+}
+
+
+/*块状菜单课程介绍子栏目样式*/
+
+.blockMenuMoreIntro {
+    margin-bottom: 0;
+    position: absolute;
+    width: 240px;
+    bottom: 5px;
+}
+
+.blockMenuMoreIntro span {
+    font-size: 12px;
+    color: #808080;
+    margin-top: 10px;
+}
+
+.menuIntro i {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    float: left;
+    margin-right: 8px;
+}
+
+.menuStudyTime {}
+
+
+/*块状菜单学习时长样式*/
+
+.blockMenuStudyTime {
+    float: left;
+    width: 170px;
+}
+
+.timeIcon {
+    background: url(img/mainBodyImg/clock.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+}
+
+
+/*块状菜单学习人数样式*/
+
+.blockMenuPeopleNumber {
+    float: right;
+    display: none;
+}
+
+.righMenuBlockStyleWrapper ul li:hover .blockMenuPeopleNumber {
+    display: inline-block;
+}
+
+
+/*块状菜单课程等级样式*/
+
+.blockMenuLevel {
+    float: left;
+    width: 200px;
+    display: none;
+}
+
+.righMenuBlockStyleWrapper ul li:hover .blockMenuLevel {
+    display: inline-block;
+}
+
+
+/*块状菜单右下角小标签样式*/
+
+.blockMenuIcon {
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*右侧菜单**块状**显示结束*/
+
+
+/*右侧菜单**列表**显示开始*/
+
+.rightMenuListStyleWrapper {
+    display: none;
+}
+
+.rightMenuListStyleWrapper ul {
+    padding: 0;
+}
+
+.rightMenuListStyleWrapper ul li {
+    list-style: none;
+    display: block;
+    height: 100px;
+    width: 765px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.rightMenuListStyleWrapper ul li div {
+    display: inline-block;
+    float: left;
+}
+
+.rightMenuListStyleWrapper ul li div:nth-child(1) {
+    width: 185px!important;
+    height: 100px!important;
+}
+
+.rightMenuListStyleWrapper ul li div:nth-child(1) img {
+    width: 185px!important;
+    height: 100px!important;
+}
+
+..rightMenuListStyleWrapper ul li div:nth-child(1) div {
+    width: 185px!important;
+    height: 100px!important;
+}
+
+.listMenuIntor {
+    height: 100px;
+    width: 570px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.listMenuIntor h3 {
+    margin: 0;
+}
+
+.listMenuIntor h3 a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.listMenuIntor h3 a:hover {
+    color: #35b358;
+}
+
+.listMenuIntor p {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: #808080;
+}
+
+.listMenuIntor span {
+    display: inline-block;
+    font-size: 13px;
+    color: #555;
+    position: absolute;
+    bottom: 0;
+}
+
+.listMenuIntor span:nth-child(4) {
+    margin-left: 100px;
+}
+
+.listMenuIntor span:nth-child(5) {
+    margin-left: 500px
+}
+
+.listMenuIntor span i {
+    margin-top: 2px;
+}
+
+
+/*右侧菜单**列表**显示结束*/
+
+
+/*主体部分右部目录结束*/
+
+
+/*主体部分结束*/
+
+
+/*****************************************/
+
+
+/*****************************************/
+
+
+/*底部开始*/
+
+.footer {
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    margin-bottom: 20px;
+    height: 340px;
+    position: relative;
+}
+
+.footer * {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .jkinfor-block {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.jkinfor-block .jkinfor {
+    position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.jkinfor-block .jkinfor .jk-logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+
+.jkinfor-block .jkinfor .jk-logo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+.jkinfor-block .jkinfor .jk-logo p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.jkinfor-block .jkinfor dl {
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+
+.jkinfor-block .jkinfor dl dt {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd a {
+    color: #999999;
+}
+
+.jkinfor a:hover {
+    color: #35b558;
+}
+
+#footer .jk-download {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.jk-download .hot-tel {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.jk-download .downCon {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.jk-download .down-ios {
+    background: url(img/footer/icon-down-ios.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.jk-download .down-and {
+    background: url(img/footer/icon-down-and.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.jk-download .downCon img {
+    display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+
+.jk-download .downCon:hover img {
+    display: block;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.copyright strong {
+    font-weight: 400;
+}
+
+.copyright strong:hover a {
+    color: #35b558;
+}
+
+.copyright a {
+    color: #999;
+}
+
+.copyright a.down-wechat {
+    float: right;
+    height: 15px;
+    width: 20px;
+    background: url(img/footer/icon-down-wechat.png) no-repeat 0 0;
+    background-size: 18px 15px;
+}
+
+.copyright a.down-sina {
+    float: right;
+    height: 15px;
+    width: 20px;
+    background: url(img/footer/icon-down-sina.png) no-repeat 0 0;
+    background-size: 20px 15px;
+    margin-right: 10px;
+}
+
+.copyright .footer-bottom-logo {
+    display: block;
+    margin: 15px auto 0;
+}
+
+.copyright .footer-bottom-logo img {
+    width: 60px;
+    border: 0;
+}
+
+
+/*底部结束*/
+
+
+/*****************************************/
+
+
+/*---------------------------右侧悬浮区域开始---------------------------------*/
+
+.sidebar {
+    position: fixed;
+    left: 50%;
+    bottom: 70px;
+    margin-left: 510px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.sidebar * {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .top {
+    display: block;
+    background: url(img/jk-sidebar/gotop.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar .top:hover {
+    background: url(img/jk-sidebar/gotop_hover.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar .jk-app {
+    position: relative;
+    display: block;
+    background: url(img/jk-sidebar/phone.png) center center no-repeat;
+    background-color: #ebebeb;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar .jk-app:hover {
+    background: url(img/jk-sidebar/phone-hover.png) center center no-repeat;
+    background-size: 12px 24px;
+}
+
+.sidebar .appMatrixCode {
+    background: url(img/jk-sidebar/appdownload.png) center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+
+.sidebar .jk-app:hover .appMatrixCode {
+    display: block;
+}
+
+.sidebar img {
+    opacity: 0.9;
+    height: 34px;
+    width: 34px;
+}
+
+
+/*---------------------------右侧悬浮区域结束---------------------------------*/
+/*---------------------------底部选择页数的区域开始----------------------------*/
+
+.choosePageWrapper{
+     height:32px;
+     width:100%;
+     margin-bottom: 30px;
+}
+.choosePageContainer{
+    width:900px;
+    height:32px;
+    margin-left: 380px;
+}
+.choosePageContainer ul li{
+    display:inline-block;
+    list-style: none;
+    background-color: #fff;
+    font-size: 13px;
+    margin-left: 5px;
+    height:32px;
+    text-align: center;
+    line-height: 32px;
+    border:1px solid #d9d9c3;
+    float:left;
+}
+
+.homePage{
+    width:50px;
+    color:#d9d9c3;
+}
+
+.upPage{
+    width:70px;
+    color:#d9d9c3;
+}
+
+.page1,.page2,.page3,.page4,.page5,.page6,.page7,.morePage{
+    width:32px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color:#808080;
+}
+.morePage{
+    background-color: #f5f5f5!important;
+    border:none!important;
+}
+.page1:hover,.page2:hover,.page3:hover,.page4:hover,.page5:hover,.page6:hover,.page7:hover,.nextPage:hover,.lastPage:hover{
+    border:1px solid #35b358;
+    color:#35b358;
+}
+
+.page1{
+    background-color: #35b358!important;
+    color:#fff;
+}
+
+.nextPage,.lastPage{
+    width:60px;
+    cursor: pointer;
+    color:#808080;
+}
+
+.inputPage{
+    width:32px;
+}
+
+.totalPage, .choosePage{
+    background-color:#f5f5f5!important;
+    border:none!important;
+}
+
+#pageConfirm{
+    height:20px!important;
+    cursor: pointer;
+    line-height: 20px!important;
+    margin-top: 4px;
+    font-size: 11px!important;
+    color:#808080!important;
+}
+
+/*---------------------------底部选择页数的区域结束----------------------------*/

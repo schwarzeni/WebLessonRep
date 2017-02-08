@@ -1,0 +1,1004 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1000px;
+}
+
+.bodyInit {
+    background-color: #f7e2cd;
+    background: url('#') center/cover fixed no-repeat;
+}
+
+.mainWrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+/*导航部分开始*/
+
+.NavWrapper {
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+/*导航栏换肤后的样式*/
+
+.NavWrapper_ChangeColor {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 25, 50, .3)), to(rgba(15, 25, 50, .3)));
+    background-image: -webkit-linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    background-image: linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    border: 0!important;
+    opacity: 1;
+}
+
+.NavWrapper div ul li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*左侧导航栏*/
+
+.NavLeft ul {
+    float: left;
+}
+
+.NavLeft ul li {
+    margin-left: 15px!important;
+}
+
+.NavLeft ul li:nth-child(1) {
+    font-size: 12px;
+    color: #555;
+    cursor: default;
+}
+
+.NavLeft ul li a {
+    font-size: 12px;
+    color: #555;
+}
+
+
+/*右侧导航栏*/
+
+.NavRight ul {
+    float: right;
+}
+
+.NavRight ul li:nth-child(9) {
+    margin-left: 20px;
+    background-color: #398bfb;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+}
+
+.NavRight ul li:nth-child(9) a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.NavRight ul li a {
+    color: #555;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/*导航部分结束*/
+
+
+/*搜索部分开始*/
+
+
+/*搜索框未在顶端的样式*/
+
+.researchWrapper_NotTop {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: block;
+}
+
+
+/*搜索框在顶端的样式*/
+
+.researchWrapper_AtTop {
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    margin-top: 0;
+    top: 0;
+    vertical-align: middle;
+    position: fixed;
+    opacity: 0.8;
+    border-bottom: 1px solid #b8b8b8;
+    min-width: 1250px;
+    z-index: 10;
+}
+
+
+/*搜索框部分样式*/
+
+#researchWrapper div {}
+
+
+/*搜索框到达顶部时出现在左侧的百度图标*/
+
+.researchImg {
+    height: 60px;
+    top: 10px;
+    left: 150px;
+    margin-right: 0;
+    /*    margin-right: -100px;*/
+    /*    margin-left: 100px;*/
+    position: absolute;
+}
+
+
+/*搜索框上logo定位*/
+
+.headLogoImg {
+    width: 270px;
+    height: 130px;
+    margin-left: 50%;
+    left: -135px;
+    position: relative;
+}
+
+
+/*搜索框上logo*/
+
+.headLogoImg img {
+    width: 270px;
+    height: 129px;
+}
+
+#researchImg {
+    display: none;
+}
+
+#researchForm {
+    width: 640px;
+    height: 40px;
+    left: 50%;
+    margin-top: 10px;
+    /*    margin: 0 auto;*/
+    position: relative;
+    margin-left: -320px;
+    /*    display: inline-block;*/
+}
+
+#researchBar {
+    width: 540px;
+    height: 40px;
+    margin-right: 0px;
+    padding-left: 10px;
+    border: 1px solid #b8b8b8;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+    float: left;
+}
+
+#researchBar:hover {
+    border: 1px solid #999;
+}
+
+#researchButton {
+    width: 100px;
+    height: 40px;
+    background-color: #38f;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.researchButton_ChangeBackground {
+    background-image: url(img/changeColorImg/skin_dark.png);
+    background-position: -206px 0;
+    color: #000!important;
+    height: 39px!important;
+    border: 0!important;
+}
+
+#researchButton:hover {
+    background-color: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.camera {
+    z-index: 1;
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: url(img/Search_Camera.png) no-repeat;
+    cursor: pointer;
+}
+
+.camera:hover {
+    background-position: 0 -20px;
+}
+
+
+/*搜索区域结束*/
+
+.BLANK {
+    height: 2000px;
+    width: 100px;
+}
+
+
+/*导航栏用户下拉框开始*/
+
+#NavUsr_DownMenu {
+    right: 130px;
+}
+
+
+/*导航栏设置下拉框开始*/
+
+.NavSetting_DownMenu {
+    display: none;
+    position: absolute;
+    right: 80px;
+    border: 1px solid #d1d1d1;
+    z-index: 1000;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -o-box-shadow: 1px 1px 5px #d1d1d1;
+    background-color: #fff;
+}
+
+.NavSetting_DownMenuHead {
+    width: 10px;
+    height: 10px;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-style: dashed dashed solid;
+    margin-top: -5px!important;
+    margin: 0 auto;
+    border-left: 1px solid #d1d1d1;
+    border-top: 1px solid #d1d1d1;
+    background-color: #fff;
+}
+
+.NavSetting_DownMenu ul {
+    margin-top: 1px;
+}
+
+.NavSetting_DownMenu ul li {
+    list-style: none;
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.NavSetting_DownMenu ul li:hover {
+    background-color: #38f;
+}
+
+.NavSetting_DownMenu ul li:hover a {
+    color: #fff;
+}
+
+.NavSetting_DownMenu ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*导航栏设置下拉框结束*/
+
+
+/*右侧下拉框开始*/
+
+.rightDownMenu {
+    z-index: 5000;
+    width: 80px;
+    height: 1000px;
+    background-color: #f9f9f9;
+    right: 0;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.rightDownMenu ul li {
+    list-style: none;
+}
+
+.rightDownMenu ul li {
+    width: auto;
+    height: 70px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: #f0f0f0 1px solid;
+    padding-top: 10px;
+}
+
+.rightDownMenu ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.rightDownMenu ul li a:hover {
+    text-decoration: underline;
+}
+
+.rightDownMenu ul li img {
+    display: block;
+    margin: 0 auto;
+}
+
+.rightDownMenu ul li:nth-child(1) {
+    height: 32px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    padding-top: 0;
+    cursor: default;
+}
+
+.rightDownMenu ul li:nth-child(2) {
+    margin-top: 10px;
+}
+
+.rightDownMenu ul li:nth-child(8) {
+    border: 0;
+    margin-top: 10px;
+}
+
+
+/*右侧下拉框结束*/
+
+
+/*导航栏换肤开始*/
+
+
+/*导航栏换肤整体样式*/
+
+.changeStyleWraper {
+    width: 100%;
+    height: 288px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+
+/*导航栏换肤导航栏整体样式*/
+
+.changeStyleNav {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #000;
+}
+
+
+/*导航栏换肤导航栏定位*/
+
+.changeStyleNavWrapper {
+    width: 910px;
+    height: 46px;
+    margin: 0 auto;
+}
+
+
+/*导航栏换肤导航栏选项*/
+
+.changeStyleNavWrapper ul li {
+    box-sizing: content-box;
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 46px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 13px;
+    color: #666;
+    float: left;
+    cursor: pointer;
+}
+
+.changeStyleNavWrapper ul li:nth-child(9) {
+    line-height: 50px;
+    cursor: default;
+}
+
+.changeStyleNavWrapper ul li:hover:nth-child(1),
+.changeStyleNavWrapper ul li:hover:nth-child(2),
+.changeStyleNavWrapper ul li:hover:nth-child(3),
+.changeStyleNavWrapper ul li:hover:nth-child(4),
+.changeStyleNavWrapper ul li:hover:nth-child(5),
+.changeStyleNavWrapper ul li:hover:nth-child(6),
+.changeStyleNavWrapper ul li:hover:nth-child(7),
+.changeStyleNavWrapper ul li:hover:nth-child(8),
+.changeStyleNavWrapper ul li:hover:nth-child(10),
+.changeStyleNavWrapper ul li:hover:nth-child(11) {
+    background-color: #389cff;
+    color: #fff;
+}
+
+
+/*导航栏换肤导航栏右侧选项*/
+
+.changeStyleNav_BackToTop {
+    float: right;
+    height: 46px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+
+/*导航栏换肤导航栏右侧选项整体样式*/
+
+.changeStyleNav_BackToTop span {
+    display: inline-block;
+}
+
+
+/*导航栏换肤导航栏右侧选项箭头图标*/
+
+#StyleReset {
+    font-size: 13px;
+    margin-right: 10px;
+    color: #666;
+    display: none;
+}
+
+#StyleReset:hover {
+    color: #0079f5;
+}
+
+.changeStyleNav_BackToTop .bg {
+    background: url(img/changeColorImg/iconUp.png) no-repeat -44px -175px;
+    width: 11px;
+    height: 15px;
+}
+
+
+/*导航栏换肤导航栏右侧选项字体样式*/
+
+.changeStyleNav_BackToTop .up {
+    font-size: 13px;
+    color: #0079f5;
+}
+
+
+/*导航栏换肤样式菜单*/
+
+.changeStyleMenu {
+    height: 220px;
+    width: 910px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+
+/*导航栏换肤样式菜单整体样式*/
+
+.changeStyleMenu div {
+    display: inline-block;
+    float: left;
+}
+
+
+/*导航栏换肤样式菜单图片选项*/
+
+.changeStyleMenu .changeStyleImgMenu {
+    width: 625px;
+    height: 193px;
+    background-color: aquamarine;
+    position: relative;
+}
+
+
+/*导航栏换肤样式菜单图片选项列表*/
+
+.changeStyleImgMenu ul {
+    display: none;
+}
+
+.changeStyleImgMenu ul li {
+    display: block;
+    position: absolute;
+    background-color: azure;
+    float: left;
+    border: 1px solid #fff;
+}
+
+
+/*图片定位开始*/
+
+.Img1,
+.Img7 {
+    width: 208px;
+    height: 128px;
+}
+
+.Img2,
+.Img3,
+.Img4,
+.Img5,
+.Img6,
+.Img8,
+.Img9,
+.Img10,
+.Img11,
+.Img12 {
+    width: 104px;
+    height: 64px;
+}
+
+.Img1 {
+    top: 0;
+    left: 0;
+}
+
+.Img2 {
+    left: 208px;
+    top: 0;
+}
+
+.Img3 {
+    top: 0;
+    left: 312px;
+    ;
+}
+
+.Img4 {
+    top: 0;
+    left: 416px;
+}
+
+.Img5 {
+    top: 0;
+    left: 520px;
+}
+
+.Img6 {
+    top: 64px;
+    left: 208px;
+}
+
+.Img7 {
+    top: 64px;
+    left: 312px;
+    ;
+}
+
+.Img8 {
+    top: 64px;
+    left: 520px;
+}
+
+.Img9 {
+    top: 128px;
+    left: 520px;
+}
+
+.Img10 {
+    top: 128px;
+    ;
+    left: 0;
+}
+
+.Img11 {
+    top: 128px;
+    left: 104px;
+    ;
+}
+
+.Img12 {
+    top: 128px;
+    left: 208px;
+    ;
+}
+
+.p1,
+.p7 {
+    width: 208px;
+    height: 128px;
+}
+
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p8,
+.p9,
+.p10,
+.p11,
+.p12 {
+    width: 104px;
+    height: 64px;
+}
+
+
+/*图片定位结束*/
+
+
+/*图片预览整体样式*/
+
+.changeStyleImgPreview {
+    width: 263px;
+    height: 190px;
+    float: right!important;
+    /*
+    background: url(img/changeColorImg/initPage.png) no-repeat -1000px -1000px;
+    background-position: -275px 0;
+*/
+    position: relative;
+}
+
+.changeStyleImgPreviewContainer {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    margin-left: 20px;
+    width: 260px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.ppp {
+    /*    position: absolute;*/
+    top: 0;
+    right: 0;
+    margin-left: 20px;
+    width: 264px;
+    height: 190px;
+    background: url(img/changeColorImg/initPage.png) no-repeat;
+    background-position: -275px 0;
+}
+
+.pppHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 1px;
+    width: 264px;
+    height: 190px;
+    background: url(img/changeColorImg/initPage.png) no-repeat;
+    background-position: 0 0;
+    z-index: 1000;
+}
+
+
+/*导航栏换肤结束*/
+
+
+/*底部菜单开始*/
+
+.buttonMenuWrapper {
+    width: 100%;
+    position: absolute;
+}
+
+
+/*底部菜单整体定位*/
+
+.buttomMenu {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+/*底部菜单导航栏整体样式*/
+
+.buttomNavWrapper {
+    border: 1px solid #e9e9e9;
+    height: 42px;
+}
+
+
+/*底部菜单导航栏图标背景引用*/
+
+.buttomNavWrapper span {
+    background: url(img/buttomImg/icon.png) no-repeat;
+}
+
+
+/*底部菜单导航栏左侧样式*/
+
+.buttomNavWrapperLeft ul li {
+    display: inline-block;
+    list-style: none;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*单独设置导航栏第一个选项文字(span)的背景*/
+
+.buttomNavWrapperLeft ul li span:nth-child(2) {
+    background-image: url(#);
+}
+
+
+/*底部菜单导航栏悬浮效果*/
+
+#buttomNavWrapperLeft ul li:hover {
+    background-color: #b3b6bb;
+    color: #fff;
+}
+
+.buttomNavWrapperLeft ul li:nth-child(6),
+.buttomNavWrapperLeft ul li:nth-child(7) {
+    display: none;
+}
+
+
+/*
+.buttomMenu ul li:hover{
+    background-color: #b3b6bb;
+    color:#fff;
+}
+*/
+
+
+/*底部菜单导航栏第一个选项样式设定*/
+
+.buttomMenu .buttomNavWrapperLeft ul li:nth-child(1) {
+    width: 124px;
+    vertical-align: middle;
+}
+
+
+/*底部菜单导航栏第一个选项图标样式*/
+
+.buttomMenu ul li:nth-child(1) span {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -15px 0;
+}
+
+
+/*底部菜单导航栏第一个选项图标引用*/
+
+#buttomNavWrapperLeftIcon {
+    display: inline-block;
+    background-position: -15px 0;
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+
+/*底部菜单导航栏第一个选项图标悬浮效果*/
+
+.buttomMenu ul li:hover #buttomNavWrapperLeftIcon {
+    background-position: -144px 0;
+}
+
+
+/*底部菜单导航栏右侧图标定位*/
+
+.buttomNavWrapperRight {
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/*底部菜单导航栏右侧图标样式设定*/
+
+.buttomNavWrapperRight span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: -121px -49px;
+}
+
+
+/*底部菜单导航栏右侧图标样式悬浮效果*/
+
+.buttomNavWrapperRight span:hover {
+    background-position: -121px -73px;
+}
+
+
+/*底部菜单导航栏样式开始*/
+
+
+/*底部菜单导航栏开始*/
+
+.buttomMenuWrapper {
+    height: 700px;
+    position: relative;
+    background-color: #fff;
+}
+
+.buttomMenuWrapper div {
+    display: none;
+}
+
+
+/*底部菜单导航栏结束*/
+
+
+/*底部菜单设置开始*/
+
+.buttomMenu_setting {
+    width: 840px;
+    height: 186px;
+    background-color: #fff;
+    position: absolute;
+}
+
+
+/*底部菜单设置整体样式*/
+
+.buttomMenu_setting div {
+    display: inline-block;
+    float: left;
+    width: 419px;
+    height: 185px;
+}
+
+
+/*底部菜单设置整体样式*/
+
+.buttomMenu_setting div div {
+    margin-right: 2px;
+}
+
+.buttomMenu_setting div div:nth-child(1) {
+    height: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+    padding-left: 10px;
+}
+
+
+/*订阅频道框定位*/
+
+.buttomMenu_setting div div ul {
+    margin-top: 10px;
+}
+
+
+/*订阅频道框样式*/
+
+.buttomMenu_setting div div ul li {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    font-size: 13px;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #222;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+/*订阅频道框悬浮样式样式*/
+
+.buttomMenu_setting div div ul li:hover {
+    background-color: #38f;
+    color: #fff;
+}
+
+.buttomMenu_setting_ChosenMenu_myFocus {
+    width: 90px!important;
+    cursor: default!important;
+}
+
+.buttomMenu_setting_ChosenMenu_myFocus:hover {
+    background-color: #fff!important;
+    color: #222!important;
+}
+
+.buttomMenu_setting_ChosenMenu ul li:nth-child(6),
+.buttomMenu_setting_ChosenMenu ul li:nth-child(7) {
+    display: none;
+}
+
+收 .buttomMenu_setting_UnChosenMenu ul li:nth-child(1),
+.buttomMenu_setting_UnChosenMenu ul l收i:nth-child(2),
+.buttomMenu_setting_UnChosenMenu ul li:nth-child(3),
+.buttomMenu_setting_UnChosenMenu ul li:nth-child(4) {
+    display: none;
+}
+
+
+/*底部菜单设置_已订阅频道*/
+
+
+/*底部菜单设置_未订阅频道*/
+
+
+/*底部菜单设置结束*/
+
+
+/*底部菜单结束*/
+
+
+/*回到顶部按钮*/
+
+.BackToTheTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #fafafa;
+    border: 1px solid #e3e3e3;
+    left: 85%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/*回到顶部图标样式*/
+
+.BackToTheTop .BackToTheTopIcon {
+    display: block;
+    height: 17px;
+    width: 33px;
+    background: url(img/BackToTopIcon_Black.png) no-repeat -1px -10px;
+    overflow: hidden;
+    margin: 10px auto 0 auto;
+}
+
+
+/*回到顶部字体样式*/
+
+.BackToTheTop .BackToTheTopWord {
+    display: none;
+    font-size: 13px;
+    width: 26px;
+    margin: 0 auto;
+    color: #999;
+}

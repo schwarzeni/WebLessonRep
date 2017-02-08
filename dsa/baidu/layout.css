@@ -1,0 +1,236 @@
+header,
+footer,
+nav,
+section,
+article {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.wapper {
+    min-height: 600px;
+    min-width: 810px;
+    position: relative;
+    height: 100%;
+}
+
+
+/*顶部*/
+
+header {
+    height: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+}
+
+nav div {
+    float: left;
+    width: 60px;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+nav div a {
+    color: #000000;
+}
+
+nav div a:hover {
+    color: #00c;
+}
+
+.load,
+.setting {
+    font-weight: normal;
+}
+
+ul {
+    border: 1px solid #b6b6b6;
+    width: 60px;
+    display: none;
+}
+
+ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+li:hover {
+    background-color: #38f;
+}
+
+.moreproduct:hover {
+    height: 18px;
+    background-color: aqua;
+}
+
+
+/*中部*/
+
+article {
+    margin-top: 30px;
+    position: relative;
+}
+
+.pic {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pic img {
+    width: 270px;
+    height: 129px;
+}
+
+.input {
+    height: 36px;
+    text-align: center;
+    display: block;
+    font-size: 0;
+}
+
+.camera {
+    z-index: 1;
+    position: absolute;
+    right: 170px;
+    top: 9px;
+    height: 16px;
+    width: 18px;
+    background: #fff;
+    background-image: url(pic/camera.png);
+    cursor: pointer;
+}
+
+form {
+    position: relative;
+    width: 700px;
+    margin: 10px auto;
+}
+
+#content {
+    width: 540px;
+    height: 35px;
+    text-indent: 5px;
+    font-size: 13px;
+    border: 1px solid #b6b6b6;
+    vertical-align: middle;
+    line-height: 35px;
+    float: left;
+}
+
+#content:hover {
+    border-color: #999;
+}
+
+#content:focus {
+    border-color: #4791ff;
+}
+
+span {
+    position: absolute;
+}
+
+i {
+    position: relative;
+}
+
+#confirm {
+    width: 100px;
+    height: 37px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: #2d78f4;
+    vertical-align: middle;
+    float: left;
+}
+
+#confirm:hover {
+    background: #2d78f4;
+    cursor: pointer;
+}
+
+
+/*底部*/
+
+footer {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 30px;
+    color: #999;
+    text-align: center;
+    display: block;
+    *left: 53%;
+    *width: 700px;
+    *margin-left: -350px;
+}
+
+.footleft {
+    margin-right: 20px;
+    height: 70px;
+    display: inline-block;
+    *width: 300px;
+    *float: left;
+}
+
+footer .footleft div {
+    float: left;
+    margin-right: 10px;
+}
+
+.barcode1Intro {
+    padding-top: 10px;
+    font-size: 13px;
+    font-size: 12px\9;
+    line-height: 23px;
+}
+
+.barcode2Intro {
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 23px;
+    font-size: 12px\9;
+}
+
+.footright {
+    height: 70px;
+    display: inline-block;
+    text-align: left;
+    line-height: 26px;
+    font-size: 13px;
+    font-size: 12px\9;
+    *width: 300px;
+    *float: left;
+}
+
+.footright a {
+    color: #999;
+}
+
+.firstline a {
+    margin-right: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+html,
+body {
+    background-color: #dbbc80;
+    width: 100%;
+}
+
+.twinefly {
+    margin-top: 10px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+/*中部*/
+
+.main {
+    float: left;
+    width: 100%;
+    min-height: 30px;
+}
+
+.mainwrapper {
+    margin: 0 210px;
+    background-color: #ffffff;
+    min-height: 30px;
+    background-color: #5c62eb;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #186577;
+}
+
+p {
+    text-align: center;
+    font-size: 70px;
+    font-family: cursive;
+}
+
+
+/*左侧*/
+
+.sub {
+    float: left;
+    width: 200px;
+    min-height: 30px;
+    background-color: #18d359;
+    margin-left: -100%;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6) inset;
+}
+
+ul {
+    text-align: center;
+    line-height: 40px;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.sub li {
+    border: 1px solid #0bad5c;
+}
+
+
+/*右侧*/
+
+.extra {
+    float: left;
+    width: 200px;
+    min-height: 30px;
+    background-color: #b751ed;
+    margin-left: -200px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6) inset;
+}
+
+.extra li {
+    border: 1px solid #5613b2;
+}

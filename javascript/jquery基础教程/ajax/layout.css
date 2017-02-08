@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#infoWrapper{
+    width:900px;
+    height:2000px;
+    margin: 0 auto;
+}
+
+#infoWrapper div{
+    display: inline-block;
+}
+
+#infoHead{
+    width:900px;
+    height:40px;
+    background-color: aquamarine;
+    float: left;
+}
+
+#infoHead div{
+    width:80px;
+    height:40px;
+    display: inline-block;
+    background-color: blueviolet;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+#infoHead div:nth-child(1){
+    width:130px;
+}
+
+#infoLeft{
+    width:600px;
+    height:1000px;
+    background-color: bisque;
+    float: left;
+}
+
+.infoRight{
+    width:300px;
+    height:400px;
+    background-color: brown;
+}
+
+.infoRightTop{
+    width:300px;
+    height:400px;
+    background-color: brown;
+    position: fixed;
+    margin-left: -300px;
+}
+

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: "Microsoft YaHei", 宋体, "Myriad Pro", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 25px;
+    background-color: #e3e3e3;
+}
+
+body h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+body p {
+    text-align: center;
+}
+
+.wrapper {
+    background-color: bisque;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.wrapper div div {
+    display: none;
+    background-color: #eb8f33;
+}
+
+.wrapper div:hover div {
+    display: block;
+}
+
+footer {
+    margin: 0 auto;
+    background-color: #e3e3e3;
+    text-align: center;
+}
+
+footer * {
+    margin-right: 20px;
+}

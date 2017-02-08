@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css"> </head>
+
+<body>
+    <div class="mainWrapper">
+        <!--     顶部导航栏开始-->
+        <div class="headNav" name="Top">
+            <div class="headNavWrapper">
+                <!--               顶部左侧Logo-->
+                <div class="mainLogo">
+                    <a href="http://www.jikexueyuan.com/"><img src="img/mainLogo.png" alt="极客学院"></a>
+                </div>
+                <!--                顶部导航栏左侧课程下拉菜单选项-->
+                <div class="navLeftMenu">
+                    <ul>
+                        <li id="mainPage">首页</li>
+                        <li id="headNavDownMenu_zhiyexueyua">职业学院<span></span>
+                            <!--        职业学院下拉菜单开始-->
+                            <div class="headNavDownMenu_zhiyexueyuan_list" id="headNavDownMenu_zhiyexueyuan_list">
+                                <h3>前端学院</h3><a href="http://www.jikexueyuan.com/zhiye/web"><i></i>前端工程师</a> <a href="http://www.jikexueyuan.com/zhiye/wechatapp"><i></i>微信小程序工程师</a>
+                                <h3>后端学院</h3> <a href="http://www.jikexueyuan.com/zhiye/python"><i></i>Python Web工程师</a> <a href="http://www.jikexueyuan.com/zhiye/go"><i></i>Go语言工程师</a>
+                                <h3>移动学院</h3> <a href="http://www.jikexueyuan.com/zhiye/ios"><i></i>iOS工程师</a> </div>
+                            <!--        职业学院下拉菜单结束-->
+                        </li>
+                        <li id="headNavDownMenu_VIPLesson">会员课程<span></span>
+                            <!--        会员课程下拉菜单开始-->
+                            <div class="headNavDownMenu_huiyuankecheng" id="headNavDownMenu_huiyuankecheng"> <a id="kechengku"><i></i>课程库<div>2500+</div></a> <a id="zhiyelujin"><i></i>职业路径图<div>9</div></a> <a id="zhishitixi"><i></i>知识体系图<div>24</div></a> <a id="xiliekecheng"><i></i>系列课程<div>101</div></a> <a id="kechengbiaoqian"><i></i>课程标签<div>4000+</div></a> <a id="VIPgoumai"><i></i>VIP会员购买<div>30/月 260/年</div></a> </div>
+                            <!--        会员课程下拉菜单结束-->
+                        </li>
+                        <li id="headNavDownMenu_JikeCommunity">极客社区<span></span>
+                            <!--        极客社区下拉菜单开始-->
+                            <div class="headNavDownMenu_jikeshequ" id="headNavDownMenu_jikeshequ"> <a id="jishuwenda"><i ></i>技术问答<div>20000+</div></a> <a id="Wiki"><i ></i>Wiki<div>351</div></a> <a id="shequn"><i></i>社群<div>7000+</div></a> <a id="ziyuanxiazai"><i></i>资源下载<div>3000+</div></a> </div>
+                            <!--        极客社区下拉菜单结束-->
+                        </li>
+                    </ul>
+                </div>
+                <!--                顶部导航栏右侧选项开始-->
+                <div class="navRightMenu">
+                    <!--                   极客学院登录开始-->
+                    <div class="navRightLoge">
+                        <!--        用户个人信息显示菜单开始-->
+                        <div class="headNavDownMenu_usrInfo" id="headNavDownMenu_usrInfo"> <i class="headNavDownMenu_array headNavDownMenu_array_usrInfo"></i>
+                            <div><a href="" id="logo">登录</a> | <a href="" id="sign">注册</a></div>
+                            <div><i></i><a href="">学习中心</a></div>
+                            <div><i></i><a href="">个人主页</a></div>
+                            <div><i></i><a href="">消息通知</a></div>
+                            <div><i></i><a href="">账号设置</a></div>
+                        </div>
+                        <!--        用户个人信息显示菜单结束-->
+                    </div>
+                    <!--                    极客学院登录结束-->
+                    <!--        极客学院app下载二维码开始-->
+                    <div class="navRightAppDownload">
+                        <div class="headNavDownMenu_appDownload" id="headNavDownMenu_appDownload"> <i class="headNavDownMenu_array"></i> </div>
+                    </div>
+                    <!--        极客学院app下载二维码结束-->
+                    <div class="navRightRearch">
+                        <!--                顶部导航栏搜索框开始-->
+                        <div id="navRearchBarWrapper" class="navRearchBarWrapper"> <i class="navRearchBarWrapperLeftIcon navRightRearch"></i> <i class="navRearchBarWrapperRightIcon"></i>
+                            <form action="">
+                                <input type="text" class="navRearchBar" placeholder="搜索课程 问答或Wiki"> </form> <a href="http://search.jikexueyuan.com/course/?q=Android">Android</a> <a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a> <a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a> </div>
+                        <!--                顶部导航栏搜索框结束-->
+                    </div>
+                </div>
+                <!--                顶部导航栏右侧选项结束-->
+            </div>
+        </div>
+        <!--     顶部导航栏结束-->
+        <!--     页面主体开始-->
+        <div class="mainBodyWrapper">
+            <div class="mainBodyContainer">
+                <div class="mainBodySideMenu">
+                    <!--               课程库菜单开始-->
+                    <div class="mainBodySideMenu_lessonMainMenuWrapper">
+                        <div class="menuHead"><i class="menuHeadIcon"></i><a href="http://www.jikexueyuan.com/course">课程库</a></div>
+                        <div class="mainBodySideMenu_lessonMainMenu">
+                            <ul>
+                                <li>移动开发
+                                    <div class="lessonSubMenu mobileDevLesson">
+                                        <h3>应用开发</h3> <a href="#">Andriod</a><a href="#">iOS</a>
+                                        <h3>游戏开发</h3> <a href="#">Cocos</a> <a href="#">Unity3D</a> <a href="#">SpriteKit 2D</a> <a href="#">Unreal</a>
+                                        <h3>常用框架</h3> <a href="#">Cordova</a><a href="#">React Native</a> </div>
+                                </li>
+                                <li>前端开发
+                                    <div class="lessonSubMenu webDevLesson">
+                                        <h3>前端基础</h3> <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a> <a href="#">HTML5</a> <a href="#">CSS3</a> <a href="#">技术前瞻</a>
+                                        <h3>前端进阶</h3> <a href="#">Typescript</a> <a href="#">前端安全</a> <a href="#">项目实战</a>
+                                        <h3>前端框架</h3> <a href="#">jQuery</a> <a href="#">jQuery UI</a> <a href="#">jQuery Mobile</a> <a href="#">Ext JS</a> <a href="#">AngularJS</a> <a href="#">ReactJS</a> <a href="#">Bootstrap</a> <a href="#">React Native</a> <a href="#">Backbone</a> <a href="#">Three.js</a> <a href="#">MooTools</a> <a href="#">Compass</a>
+                                        <h3>HTML5游戏</h3> <a href="#">Canvas</a> <a href="#">SVG</a> <a href="#">WebGL</a> <a href="#">Cocos2d-js</a> <a href="#">CreateJS</a> <a href="#">Flash</a> <a href="#">Unreal</a> <a href="#">Egret</a> <a href="#">Phaser</a> </div>
+                                </li>
+                                <li>后端开发
+                                    <div class="lessonSubMenu severDevLesson">
+                                        <h3>Python</h3> <a href="#">Python 基础</a> <a href="#">web2py</a> <a href="#">Django</a> <a href="#">Flask</a> <a href="#">GUI</a> <a href="#">数据挖掘与分析</a>
+                                        <h3>PHP</h3> <a href="#">PHP 基础</a> <a href="#">YII</a> <a href="#">ThinkPHP</a> <a href="#">Laravel</a> <a href="#">WordPress</a> <a href="#">Phalcon</a> <a href="#">Apache</a> <a href="#">Facebook Hack</a>
+                                        <h3>Node.js</h3> <a href="#">Node.js 基础</a> <a href="#">express</a> <a href="#">Meteor</a> <a href="#">Hexo</a>
+                                        <h3>ASP.NET</h3> <a href="#">C#</a> <a href="#">ASP.NET MVC</a> <a href="#">Entity Framework</a> <a href="#">WPF</a>
+                                        <h3>J2EE</h3> <a href="#">JSP</a> <a href="#">Maven</a> <a href="#">Spring</a> <a href="#">SpringMVC</a> <a href="#">Struts2</a> <a href="#">MyBatis</a> <a href="#">Hibernate</a> <a href="#">Lucene</a> <a href="#">常用框架</a> <a href="#">项目实战</a>
+                                        <h3>Ruby</h3> <a href="#">Ruby 基础</a> <a href="#">Ruby on Rails</a> <a href="#">Grape</a> <a href="#">Ruby进阶</a> <a href="#">RubyMine</a>
+                                        <h3>Go</h3> <a href="#">Go 基础</a> <a href="#">Revel</a> <a href="#">beego</a>
+                                        <h3>Erlang</h3> <a href="#">Erlang 基础</a> </div>
+                                </li>
+                                <li>基础知识
+                                    <div class="lessonSubMenu basicLesson">
+                                        <h3>基础知识</h3> <a href="#">C</a> <a href="#">C++</a> <a href="#">Objective-C</a> <a href="#">Swift</a> <a href="#">C#</a> <a href="#">Java</a> <a href="#">Perl</a> <a href="#">Shell</a> <a href="#">Qt</a> <a href="#">Scala</a>
+                                        <h3>计算机基础</h3> <a href="#">计算机组成原理</a> <a href="#">网络工程</a> <a href="#">Word</a> <a href="#">Excel</a> <a href="#">PowerPoint</a>
+                                        <h3>开发基础</h3> <a href="#">算法基础</a> <a href="#">数据结构</a> <a href="#">模式设计</a> <a href="#">软件工程</a>
+                                        <h3>开发工具</h3> <a href="#">Git/Github</a> <a href="#">SYN</a> <a href="#">VI</a>
+                                        <h3>开放标准</h3> <a href="#">OpenCL</a> <a href="#">OpenXML</a> <a href="#">OpenGL/GLES</a> </div>
+                                </li>
+                                <li>云计算&大数据
+                                    <div class="lessonSubMenu cloudDevLesson">
+                                        <h3>云计算</h3> <a href="#">OpenStack</a> <a href="#">Docker</a> <a href="#">CouldStack</a> <a href="#">Windows Azure</a> <a href="#">laaS</a>
+                                        <h3>大数据</h3> <a href="#">Hadoop</a> <a href="#">Strom</a> <a href="#">Hive</a> <a href="#">Flume</a> <a href="#">Kafka</a> <a href="#">Zookeeper</a> <a href="#">Hbase</a> <a href="#">Spark</a> <a href="#">信息检索</a> <a href="#">数据分析</a>
+                                        <h3>虚拟化</h3> <a href="#">VMware</a>
+                                        <h3>云平台</h3> <a href="#">腾讯云</a> </div>
+                                </li>
+                                <li>智能硬件&物联网
+                                    <div class="lessonSubMenu intelHardware">
+                                        <h3>硬件架构</h3> <a href="#">C51</a> <a href="#">ARM</a> <a href="#">Kell</a> <a href="#">Cortex-M</a> <a href="#">Cortex-A</a> <a href="#">AVR</a>
+                                        <h3>物联网操作系统</h3> <a href="#">RTOS</a> <a href="#">Android Wear</a> <a href="#">Apple Watchkit</a>
+                                        <h3>开源硬件平台</h3> <a href="#">Arduino</a> <a href="#">树莓派</a> <a href="#">mbed</a> <a href="#">GoKit</a> <a href="#">LeMaker Guitar</a>
+                                        <h3>通信链接技术</h3> <a href="#">无线WiFi</a> <a href="#">移动通信</a> <a href="#">蓝牙</a> <a href="#">NFC</a>
+                                        <h3>信息感知处理技术</h3> <a href="#">传感器</a> <a href="#">数据挖掘</a>
+                                        <h3>人机交互技术</h3> <a href="#">语音识别</a> <a href="#">人脸识别</a> <a href="#">手势识别</a> </div>
+                                </li>
+                                <li>数据库
+                                    <div class="lessonSubMenu databaseDevLesson">
+                                        <h3>SQL</h3> <a href="#">MySQL</a> <a href="#">SQL Server</a> <a href="#">Oracle</a> <a href="#">SQLite</a> <a href="#">PostgreSQL</a> <a href="#">DB2</a>
+                                        <h3>NoSQL</h3> <a href="#">Cassandra</a> <a href="#">Redis</a> <a href="#">MongoDB</a> </div>
+                                </li>
+                                <li>认证考试
+                                    <div class="lessonSubMenu examLesson">
+                                        <h3>计算机等级考试</h3> <a href="#">一级</a> <a href="#">二级C</a> <a href="#">二级Java</a> <a href="#">二级C++</a> <a href="#">网络工程师</a> <a href="#">数据库工程师</a> <a href="#">信息安全工程师</a>
+                                        <h3>企业认证</h3> <a href="#">思科认证</a> <a href="#">Oracle认证</a> <a href="#">Linux认证</a> <a href="#">ARM认证</a> </div>
+                                </li>
+                                <li>企业IT
+                                    <div class="lessonSubMenu businessLesson">
+                                        <h3>运维管理</h3> <a href="#">Shell</a> <a href="#">自动化运维</a> <a href="#">Nginx</a> <a href="#">Apache</a> <a href="#">运维监控</a>
+                                        <h3>商业智能</h3> <a href="#">FileMaker</a>
+                                        <h3>操作系统</h3> <a href="#">Linux</a> <a href="#">Windows</a> <a href="#">Mac OS</a>
+                                        <h3>企业服务</h3> <a href="#">B2C</a> </div>
+                                </li>
+                                <li>设计&产品&测试
+                                    <div class="lessonSubMenu productLesson">
+                                        <h3>设计基础</h3> <a href="#">Photoshop</a> <a href="#">Flash</a> <a href="#">lllustrator</a> <a href="#">Sketch</a>
+                                        <h3>游戏设计</h3> <a href="#">界面设计</a> <a href="#">角色设计</a>
+                                        <h3>产品经理</h3> <a href="#">需求分析</a> <a href="#">Axure</a> <a href="#">项目实战</a>
+                                        <h3>视觉设计</h3> <a href="#">应用UI设计</a> <a href="#">网页UI设计</a> <a href="#">设计理论</a> <a href="#">图形设计</a>
+                                        <h3>测试工具</h3> <a href="#">自动化测试</a> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--               课程库菜单结束-->
+                    <ul class="otherLesson">
+                        <li><a href="#" class="otherLesson_zylj"><i></i>职业路径图</a></li>
+                        <li><a href="#" class="otherLesson_zstx"><i></i>知识体系图</a></li>
+                        <li><a href="#" class="otherLesson_kclb"><i></i>系列课程</a></li>
+                        <li><a href="#" class="otherLesson_kcbq"><i></i>课程标签</a></li>
+                    </ul>
+                </div>
+                <!--            主体部分右侧课程菜单开始-->
+                <div class="mainBodyRightWrapper">
+                    <!--               右侧菜单顶部筛选开始-->
+                    <div class="lessonSortWrapper">
+                        <ul>
+                            <li>全部课程 </li>
+                            <li>最新<span></span>
+                                <div>
+                                    <ul>
+                                        <li> 最新 </li>
+                                        <li> 最热 </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>课程类型<span></span>
+                                <div>
+                                    <ul>
+                                        <li>VIP</li>
+                                        <li>免费</li>
+                                        <li>认证专享</li>
+                                        <li>全部</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>内容类型<span></span>
+                                <div>
+                                    <ul>
+                                        <li>知识精讲</li>
+                                        <li>项目实战</li>
+                                        <li>全部</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>难度等级<span></span>
+                                <div>
+                                    <ul>
+                                        <li>初级</li>
+                                        <li>中级</li>
+                                        <li>高级</li>
+                                        <li>全部</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="rightMenuChange2"> <i></i> </div>
+                        <div id="rightMenuChange1"> <i></i> </div>
+                    </div>
+                    <!--               右侧菜单顶部筛选结束-->
+                    <!--右侧菜单目录开始-->
+                    <div class="rightMenuWrapper">
+                        <!--                       右侧菜单块状模式开始-->
+                        <div class="righMenuBlockStyleWrapper righMenu">
+                            <ul>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic1.jpeg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 游戏云</a></h3>
+                                        <p>本课程主要介绍腾讯游戏云想着知识</p>
+                                        <div class="blockMenuMoreIntro menuIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>5课时177分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">2111人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic2.png" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">前端开发环境搭建(三种工具任选其一)</a></h3>
+                                        <p>本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>6课时41分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>高级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic3.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                        <p>本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>10课时204分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>高级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic4.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯大咖分享 - 腾讯大咖分享之创业心经</a></h3>
+                                        <p>本课程主要是由腾讯大咖为大家分享创业心经</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>7课时93分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic5.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 腾讯云通信</a></h3>
+                                        <p>本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>12课时106分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic6.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 在云上搭建自己的Discuz论坛</a></h3>
+                                        <p>本课程通过实操演示，教大家快速掌握云服务器的使用方法。</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>4课时19分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic7.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 腾讯云云服务器</a></h3>
+                                        <p>本课程主要为大家介绍如何使用Windows系统及Linux系统云服务器。 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>3课时13分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic8.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 腾讯云内容分发网络CDN</a></h3>
+                                        <p>本课程通过产品介绍、应用场景介绍等，手把手教你快速入门。 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>4课时14分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic9.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">腾讯云产品 - 腾讯云对象存储COS</a></h3>
+                                        <p>本课程深入浅出为你讲解COS的使用方法。 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>5课时30分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>中级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic10.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">云计算基础 - 云计算的组成</a></h3>
+                                        <p>本课程主要为大家讲解云计算的组成，COS对象存储及CDN内容分发网络。 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>4课时22分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">2439人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic11.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">云计算基础 - 一分钟了解云计算</a></h3>
+                                        <p>本课程主要带大家了解什么是云以及云计算的应用场景。</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>5课时19分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">2439人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic12.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">简介Dragonboard 410c网络服务</a></h3>
+                                        <p>1.介绍DragonBoard 410c网络服务 2.配置Dragonboard 410c网络服</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>6课时41分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic13.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">Android应用开发</a></h3>
+                                        <p> 本课将教大家如何进行Android的游戏应用开发，包括介绍所开发游戏的架构及软件的应用接口等等，目的是让大家学会在 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>2课时17分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic14.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">如何更换Dragonboard 410c操作系统</a></h3>
+                                        <p>本课教大家如何选择适合自己的操作系统和更换Dragonboard 410c开发板上的操作系统，包括在linux、windows环境下使用SD卡。 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>6课时26分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic15.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">如何一小时快速搭建一个应用号</a></h3>
+                                        <p>该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>6课时41分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic16.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">如何挽救变砖的开发板</a></h3>
+                                        <p>本课程主要是教大家怎么解决开发板变砖的问题，通过给讲述开发板变砖的类型，解决变砖开发板的方法 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>3课时7分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic17.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">简介DragonBoard 410c的开发环境</a></h3>
+                                        <p>本课程主要介绍DragonBoard 410c的开发环境，APP开发推荐使用的软件。Android Studio的介绍和安装</p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>6课时26分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic18.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="blockMenuIntro">
+                                        <h3><a href="">专业术语/技术概念</a></h3>
+                                        <p>对DragonBoard 410c开发公开课整套课程中所涉及到的一些专业术语和技术概念进行介绍，并对相关技术的使用进行了补充 </p>
+                                        <div class="blockMenuMoreIntro"> <span class="blockMenuStudyTime menuStudyTime"><i class="timeIcon"></i>3课时15分钟</span> <span class="blockMenuPeopleNumber menuPeopleNumber">1255人学习</span> <span class="blockMenuLevel menuLevel"><i class="levelIcon"></i>初级</span> <span class="blockMenuIcon menuIcon"><i></i></span> </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--                       右侧菜单块状模式结束-->
+                        <!--                        右侧菜单列表模式开始-->
+                        <div class="rightMenuListStyleWrapper righMenu">
+                            <ul>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic1.jpeg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 游戏云</a></h3>
+                                        <p>本课程主要介绍腾讯游戏云想着知识</p> <span class="menuStudyTime"><i class="timeIcon"></i>5课时177分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>2111人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic2.png" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">前端开发环境搭建(三种工具任选其一)</a></h3>
+                                        <p>本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧 </p> <span class="menuStudyTime"><i class="timeIcon"></i>5课时177分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>2111人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic1.jpeg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 游戏云</a></h3>
+                                        <p>本课程主要介绍腾讯游戏云想着知识</p> <span class="menuStudyTime"><i class="timeIcon"></i>5课时177分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>2111人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic3.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                        <p>本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p> <span class="menuStudyTime"><i class="timeIcon"></i>10课时204分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>3449人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic4.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯大咖分享 - 腾讯大咖分享之创业心经</a></h3>
+                                        <p>本课程主要是由腾讯大咖为大家分享创业心经</p> <span class="menuStudyTime"><i class="timeIcon"></i>7课时93分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic5.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 腾讯云通信</a></h3>
+                                        <p>本课程通过实操演示，教大家快速完成SDK集成。</p> <span class="menuStudyTime"><i class="timeIcon"></i>12课时106分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic6.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 在云上搭建自己的Discuz论坛</a></h3>
+                                        <p>本课程通过实操演示，教大家快速掌握云服务器的使用方法。</p> <span class="menuStudyTime"><i class="timeIcon"></i>4课时19分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic7.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 腾讯云云服务器</a></h3>
+                                        <p>本课程主要为大家介绍如何使用Windows系统及Linux系统云服务器.</p> <span class="menuStudyTime"><i class="timeIcon"></i>3课时13分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic8.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 腾讯云内容分发网络CDN</a></h3>
+                                        <p>本课程通过产品介绍、应用场景介绍等，手把手教你快速入门。</p> <span class="menuStudyTime"><i class="timeIcon"></i>4课时14分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic9.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">腾讯云产品 - 腾讯云对象存储COS</a></h3>
+                                        <p>本课程深入浅出为你讲解COS的使用方法。</p> <span class="menuStudyTime"><i class="timeIcon"></i>5课时30分钟</span><span class="menuLevel"><i class="levelIcon"></i>中级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic10.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">云计算基础 - 云计算的组成</a></h3>
+                                        <p>本课程主要为大家讲解云计算的组成，COS对象存储及CDN内容分发网络。</p> <span class="menuStudyTime"><i class="timeIcon"></i>4课时22分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>2439人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic11.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">云计算基础 - 一分钟了解云计算</a></h3>
+                                        <p>本课程主要带大家了解什么是云以及云计算的应用场景</p> <span class="menuStudyTime"><i class="timeIcon"></i>5课时19分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>2439人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic12.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">简介Dragonboard 410c网络服务</a></h3>
+                                        <p>1.介绍DragonBoard 410c网络服务 2.配置Dragonboard 410c网络服</p> <span class="menuStudyTime"><i class="timeIcon"></i>6课时41分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic13.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">Android应用开发</a></h3>
+                                        <p>本课将教大家如何进行Android的游戏应用开发，包括介绍所开发游戏的架构及软件的应用接口等等，目的是让大家学会在</p> <span class="menuStudyTime"><i class="timeIcon"></i>2课时17分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>2111人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic14.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">如何更换Dragonboard 410c操作系统</a></h3>
+                                        <p>本课教大家如何选择适合自己的操作系统和更换Dragonboard 410c开发板上的操作系统，包括在linux、windows环境下使用SD卡。</p> <span class="menuStudyTime"><i class="timeIcon"></i>6课时26分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>3141人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic15.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">如何一小时快速搭建一个应用号</a></h3>
+                                        <p>该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API</p> <span class="menuStudyTime"><i class="timeIcon"></i>6课时41分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>1255人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic16.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">如何挽救变砖的开发板</a></h3>
+                                        <p>本课程主要是教大家怎么解决开发板变砖的问题，通过给讲述开发板变砖的类型，解决变砖开发板的方法</p> <span class="menuStudyTime"><i class="timeIcon"></i>3课时7分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>2111人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic17.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">简介DragonBoard 410c的开发环境</a></h3>
+                                        <p>本课程主要介绍DragonBoard 410c的开发环境，APP开发推荐使用的软件。Android Studio的介绍和安装</p> <span class="menuStudyTime"><i class="timeIcon"></i>6课时26分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>2516人学习</span> </div>
+                                </li>
+                                <li>
+                                    <div class="blockMenuPic">
+                                        <a href=""> <img src="img/mainBodyImg/courseImg/pic18.jpg" alt="">
+                                            <div class="lessonPlay"> <i></i> </div>
+                                        </a>
+                                    </div>
+                                    <div class="listMenuIntor menuIntro">
+                                        <h3><a href="#">专业术语/技术概念</a></h3>
+                                        <p>对DragonBoard 410c开发公开课整套课程中所涉及到的一些专业术语和技术概念进行介绍，并对相关技术的使用进行了补充 </p> <span class="menuStudyTime"><i class="timeIcon"></i>3课时15分钟</span><span class="menuLevel"><i class="levelIcon"></i>初级</span><span>1255人学习</span> </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--                        右侧菜单列表模式结束-->
+                    </div>
+                    <!--右侧菜单目录结束-->
+                </div>
+                <!--            主体部分右侧课程菜单结束-->
+            </div>
+        </div>
+        <!--     页面主体结束-->
+        <div class="choosePageWrapper">
+            <div class="choosePageContainer">
+                <ul>
+                    <li class="homePage">首页</li>
+                    <li class="upPage">上一页</li>
+                    <li class="page1">1</li>
+                    <li class="page2">2</li>
+                    <li class="page3">3</li>
+                    <li class="page4">4</li>
+                    <li class="page5">5</li>
+                    <li class="page6">6</li>
+                    <li class="page7">7</li>
+                    <li class="morePage">...</li>
+                    <li class="nextPage">下一页</li>
+                    <li class="lastPage">末页</li>
+                    <li class="totalPage">共95页</li>
+                    <li class="choosePage">当前
+                    <input type="text" value="1" class="inputPage">页</li>
+                    <li id="pageConfirm">确定</li>
+                </ul>
+            </div>
+        </div>
+        <!--  底部开始-->
+        <div class="footer">
+            <div class="jkinfor-block">
+                <div class="jkinfor">
+                    <div class="jk-logo"> <img src="img/jk-logo-footer.png" alt="极客学院">
+                        <p>极客学院，编程是一种信仰</p>
+                    </div>
+                    <dl> <dt>职业学院</dt>
+                        <dd><a href="http://www.jikexueyuan.com/zhiye/web" target="_blank">Web前端工程师</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/zhiye/python" target="_blank">Python Web工程师</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/zhiye/go" target="_blank">Go语言工程师</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/zhiye/ios" target="_blank">iOS工程师</a></dd>
+                    </dl>
+                    <dl> <dt>会员课程</dt>
+                        <dd><a href="http://www.jikexueyuan.com/course/" target="_blank">课程库</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/path/" target="_blank">知识体系</a></dd>
+                        <dd><a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">职业路径</a></dd>
+                        <dd><a href="http://ke.jikexueyuan.com/xilie/" target="_blank">系列课程</a></dd>
+                        <dd><a href="http://www.jikexueyuan.com/tag/" target="_blank">课程标签</a></dd>
+                    </dl>
+                    <dl> <dt>极客社区</dt>
+                        <dd><a href="http://wenda.jikexueyuan.com/" target="_blank">技术问答</a></dd>
+                        <dd><a href="http://wiki.jikexueyuan.com/" target="_blank">Wiki</a></dd>
+                        <dd><a href="http://download.jikexueyuan.com/" target="_blank">资源下载</a></dd>
+                        <dd><a href="http://qun.jikexueyuan.com/" target="_blank">社群</a></dd>
+                    </dl>
+                    <dl>
+                        <div class="jk-download"> <dt>其他</dt>
+                            <dd><a href="http://help.jikexueyuan.com/" target="_blank">关于我们</a></dd>
+                            <dd><a href="http://help.jikexueyuan.com/join.html" target="_blank">加入我们</a></dd>
+                            <dd><a href="http://press.jikexueyuan.com/evangelist/apply.html" target="_blank">讲师合作</a></dd>
+                            <dd><a href="http://help.jikexueyuan.com/contact.html" target="_blank">联系我们</a></dd>
+                            <dd><a href="http://www.jikexueyuan.com/friendlink.html" target="_blank">友情链接</a></dd>
+                        </div>
+                    </dl>
+                    <div class="jk-download">
+                        <p class="hot-tel">服务热线：400-678-8266</p>
+                        <div class="downCon down-ios"> <img src="img/footer/appdown.png" alt="下载二维码">iPhone </div>
+                        <div class="downCon down-and"> <img src="img/footer/appdown.png" alt="下载二维码">Android </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"> Copyright © 2013-2016 <strong>
+                    <a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a>
+                </strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+                <a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+                <a href="http://weibo.com/jikexueyuan" target="_blank" class="down-sina"></a>
+                <a href="https://credit.szfw.org/CX20160908025320080267.html" target="_blank"></a>
+                <a href="https://credit.szfw.org/CX20160908025320080267.html" target="_blank" class="footer-bottom-logo"> <img src="img/footer/cert.png"> </a>
+            </div>
+        </div>
+        <!--  底部结束-->
+        <!--        侧栏开始-->
+        <div class="sidebar">
+            <a href="#Top" class="top"></a>
+            <a href="http://www.jikexueyuan.com/app" alt="极客学院应用" target="_blank"> <span class="jk-app">
+                    <div class="appMatrixCode"></div>
+                </span> </a>
+            <a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank"> <img src="img/jk-sidebar/wechat.jpg"> </a>
+        </div>
+        <!--        侧栏结束-->
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script src="js/func.js" type="text/javascript"></script>
+    </div>
+</body>
+
+</html>

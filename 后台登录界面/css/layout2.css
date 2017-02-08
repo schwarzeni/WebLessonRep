@@ -1,0 +1,31 @@
+body {
+    background-color: #eee;
+}
+
+.sidebar {
+    margin-top: 50px;
+}
+
+.rightplace {
+    margin-top: 50px;
+}
+
+.downmenu {
+    display: none;
+}
+
+.downmenu ul li {
+    list-style-type: none;
+}
+
+.menu li:hover .downmenu {
+    display: block;
+}
+
+.menu li:hover .downmenu li:hover {
+    background-color: #eee;
+}
+
+.menu li:hover .downmenu li:hover a {
+    text-decoration: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css" type="text/css"> </head>
+
+<body>
+    <div class="tip">
+        <ul>
+            <li>点击显示结果处计算器初始化</li>
+        </ul>
+    </div>
+    <!--   主体部分开始-->
+    <div class="wrapper">
+        <div id="outputResult" onclick="reset()"> </div>
+        <div>
+            <div id="num1" onclick="getInput('num1')">1</div>
+            <div id="num2" onclick="getInput('num2')">2</div>
+            <div id="num3" onclick="getInput('num3')">3</div>
+            <div id="num0" onclick="getInput('num0')">0</div>
+            <div id="dot" onclick="getInput('dot')">.</div>
+        </div>
+        <div>
+            <div id="num4" onclick="getInput('num4')">4</div>
+            <div id="num5" onclick="getInput('num5')">5</div>
+            <div id="num6" onclick="getInput('num6')">6</div>
+            <div id="fun+" onclick="getInput('fun+')">+</div>
+            <div id="fun*" onclick="getInput('fun*')">*</div>
+        </div>
+        <div>
+            <div id="num7" onclick="getInput('num7')">7</div>
+            <div id="num8" onclick="getInput('num8')">8</div>
+            <div id="num9" onclick="getInput('num9')">9</div>
+            <div id="fun-" onclick="getInput('fun-')">-</div>
+            <div id="fun/" onclick="getInput('fun/')">/</div>
+        </div>
+        <div>
+            <div id="sin" onclick="getInput('sin')">sin</div>
+            <div id="cos" onclick="getInput('cos')">cos</div>
+            <div id="tan" onclick="getInput('tan')">tan</div>
+            <div id="π" onclick="getInput('π')">π</div>
+            <div id="openRoot" onclick="getInput('openRoot')">√</div>
+        </div>
+        <div>
+            <div id="fun=" class="equal" onclick="getInput('fun=')">=</div>
+            <div id="clear" onclick="getInput('clear')">clear</div>
+        </div>
+    </div>
+    <!--    主体部分结束-->
+    <script src="fun.js" type="text/javascript"></script>
+</body>
+
+</html>

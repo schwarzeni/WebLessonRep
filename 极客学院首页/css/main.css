@@ -1,0 +1,2036 @@
+                        html,
+                        body {
+                            margin: 0;
+                            padding: 0;
+                            min-width: 1000px;
+                        }
+                        
+                        body {
+                            background-color: transparent;
+                            margin: 0px;
+                            height: 100%
+                        }
+                        
+                        * {
+                            font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+                        }
+                        
+                        button,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        input,
+                        select,
+                        textarea {
+                            font-size: 100%;
+                            font-weight: 400;
+                        }
+                        
+                        a,
+                        dd,
+                        div,
+                        dl,
+                        i,
+                        img,
+                        input,
+                        li,
+                        p,
+                        span,
+                        ul {
+                            box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            text-decoration: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        article,
+                        aside,
+                        figcaption,
+                        figure,
+                        footer,
+                        header,
+                        hgroup,
+                        nav,
+                        section,
+                        video {
+                            display: block;
+                        }
+                        
+                        img,
+                        input,
+                        label,
+                        select {
+                            vertical-align: middle;
+                        }
+                        
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: none;
+                        }
+                        
+                        li {
+                            display: list-item;
+                        }
+                        
+                        body {
+                            background-color: #f5f5f5;
+                            ;
+                        }
+                        /*----------------------------顶部开始---------------------------------*/
+                        
+                        header {
+                            background-color: #ffffff;
+                        }
+                        
+                        .TradeMark {
+                            width: 109px;
+                            float: left;
+                        }
+                        
+                        .TradeMark img {
+                            width: 109px;
+                            height: 60px;
+                            padding: 10px 0;
+                        }
+                        
+                        .HeadWrapper {
+                            height: 60px;
+                            background-color: #fff;
+                            margin: 0 auto;
+                            width: 1000px;
+                            padding: 0;
+                        }
+                        
+                        .NavWrapper {
+                            margin-left: 60px;
+                            display: inline-block;
+                            height: 60px;
+                            float: left;
+                            vertical-align: middle;
+                        }
+                        
+                        .NavWrapper li {
+                            position: relative;
+                            display: inline-block;
+                            cursor: pointer;
+                            float: left;
+                            margin-right: 60px;
+                            height: 60px;
+                            padding-top: 20px;
+                            font-size: 14px;
+                        }
+                        
+                        .NavWrapper li a {
+                            vertical-align: middle;
+                            color: #333;
+                            text-decoration: none;
+                        }
+                        
+                        .NavWrapper li:hover {
+                            color: #35b558;
+                        }
+                        
+                        .HeaderNav .ArrowIcon {
+                            width: 8px;
+                            height: 8px;
+                            border-top: 1px solid #c1c1c1;
+                            border-left: 1px solid #c1c1c1;
+                            display: inline-block;
+                            transform: rotate(1deg);
+                            transform-origin: 50% 50%;
+                            margin-bottom: 2px;
+                        }
+                        
+                        .HomePage a:hover {
+                            color: #35b558;
+                        }
+                        
+                        .SchoolList:after {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border-left: 1px #ccc solid;
+                            border-bottom: 1px #ccc solid;
+                            position: absolute;
+                            top: 24px;
+                            left: 60px;
+                            transform: rotate(-45deg);
+                            transition: transform .3s ease-out, top .3s ease-out;
+                        }
+                        
+                        .SchoolList .SubmenuSchoolList {
+                            background-color: #fff;
+                            position: absolute;
+                            top: 61px;
+                            left: 0;
+                            background: #fff;
+                            font-size: 12px;
+                            color: #666;
+                            width: 280px;
+                            height: 0;
+                            line-height: 20px;
+                            vertical-align: middle;
+                            display: block;
+                            z-index: 1000;
+                            overflow: hidden;
+                            transition: height .3s ease-out;
+                        }
+                        
+                        .SchoolList.open:after {
+                            transform: rotate(-225deg);
+                            top: 25px;
+                            transition: all .3s ease-in;
+                        }
+                        
+                        .SchoolList.open .SubmenuSchoolList {
+                            height: 240px;
+                            transition-property: all;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .SubmenuSchoolList i {
+                            background-image: url(CSSSprite.png);
+                            background-repeat: no-repeat;
+                            background-origin: 0 0;
+                            background-size: 64px 64px;
+                            width: 14px;
+                            height: 14px;
+                            display: inline-block;
+                            margin-right: 5px;
+                            margin-left: 15px;
+                        }
+                        
+                        .SubmenuSchoolList h3 {
+                            margin: 10px 0;
+                            padding: 0 15px;
+                            background: #fafafa;
+                            height: 28px;
+                            line-height: 28px;
+                            font-weight: ;
+                            color: #666;
+                            font-size: 100%;
+                        }
+                        
+                        .SubmenuSchoolList span:hover {
+                            color: #35b558;
+                        }
+                        
+                        .SubmenuSchoolList .WebIcon {
+                            background-position: -15px -27px;
+                        }
+                        
+                        .SubmenuSchoolList .PythonIcon {
+                            background-image: url(CSSSPrite2.png);
+                            background-size: 16px 148px;
+                            background-position: -2px -2px;
+                        }
+                        
+                        .SubmenuSchoolList .GoIcon {
+                            background-image: url(CSSSPrite2.png);
+                            background-size: 16px 148px;
+                            background-position: -2px -38px;
+                        }
+                        
+                        .SubmenuSchoolList .iOSIcon {
+                            background-image: url(CSSSPrite2.png);
+                            background-size: 16px 148px;
+                            background-position: -2px -82px;
+                        }
+                        /*--------------------------页头-会员课程------------------------------------*/
+                        
+                        .VipLesson:after {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border-left: 1px #ccc solid;
+                            border-bottom: 1px #ccc solid;
+                            position: absolute;
+                            top: 24px;
+                            left: 60px;
+                            transform: rotate(-45deg);
+                            transition: transform .3s ease-out, top .3s ease-out;
+                        }
+                        
+                        .VipLesson .SubVipLesson {
+                            position: absolute;
+                            height: 0;
+                            width: 280px;
+                            display: block;
+                            line-height: 40px;
+                            top: 61px;
+                            background-color: #ffffff;
+                            z-index: 1000;
+                            font-size: 12px;
+                            padding: 0 15px;
+                            overflow: hidden;
+                            transition-property: all;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .VipLesson.open .SubVipLesson {
+                            height: 260px;
+                            transition-property: all;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .VipLesson.open:after {
+                            transform: rotate(-225deg);
+                            top: 24px;
+                            transition: all .3s ease-in;
+                        }
+                        
+                        .VipLesson .SubVipLesson a {
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            color: #666;
+                        }
+                        
+                        .VipLesson .SubVipLesson a:hover {
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            background: #fafafa;
+                            color: #35b558;
+                        }
+                        
+                        .VipLesson .SubVipLesson span {
+                            float: right;
+                            color: #bbb;
+                        }
+                        /*-----------会员课程子列表开始------------*/
+                        
+                        .VipLesson .SubVipLesson i {
+                            background-image: url(CSSSprite.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-position: 0 -13px;
+                            background-size: 64px 64px;
+                            width: 14px;
+                            height: 14px;
+                            display: inline-block;
+                            margin-right: 10px!important;
+                        }
+                        /*会员课程-课程库*/
+                        
+                        .VipLesson .SubVipLesson .LessonLibrary {
+                            margin-right: 10px!important;
+                        }
+                        /*会员课程-职业路径图*/
+                        
+                        .VipLesson .SubVipLesson .ProfessionPromise {
+                            background-position: -45px 0;
+                        }
+                        /*会员课程-知识体系图*/
+                        
+                        .VipLesson .SubVipLesson .KnowledgeStructure {
+                            background-position: -30px -13px;
+                        }
+                        /*会员课程-系列课程*/
+                        
+                        .VipLesson .SubVipLesson .SeriesCourses {
+                            background-image: url(CSSSprite_SeriesCourse.png);
+                            background-position: 0 0;
+                            background-size: 12px 12px;
+                        }
+                        /*会员课程-课程列表*/
+                        
+                        .VipLesson .SubVipLesson .CourseLabel {
+                            background-position: -15px -13px;
+                        }
+                        /*会员课程-VIP购买*/
+                        
+                        .VipLesson .SubVipLesson .VipPurchase {
+                            background-position: -16px 0;
+                        }
+                        /*-----------会员课程子列表结束------------*/
+                        /*------------------------------页头-会员课程结束------------------------------*/
+                        /*------------------------------页头-极客社区开始------------------------------*/
+                        
+                        .JiKeCommunity:after {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border-left: 1px #ccc solid;
+                            border-bottom: 1px #ccc solid;
+                            position: absolute;
+                            top: 24px;
+                            left: 60px;
+                            transform: rotate(-45deg);
+                            transition: transform .3s ease-out, top .3s ease-out;
+                        }
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu {
+                            position: absolute;
+                            height: 0;
+                            width: 280px;
+                            display: block;
+                            line-height: 40px;
+                            top: 61px;
+                            background-color: #ffffff;
+                            z-index: 1000;
+                            font-size: 12px;
+                            padding: 0 15px;
+                            overflow: hidden;
+                            transition-property: all;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu a {
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            color: #666;
+                        }
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu a:hover {
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            background: #fafafa;
+                            color: #35b558;
+                        }
+                        
+                        .JiKeCommunity.open .JiKeCommunitySubmenu {
+                            height: 160px;
+                            transition-property: all;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .JiKeCommunity.open:after {
+                            transform: rotate(-225deg);
+                            top: 25px;
+                            transition: all .3s ease-in;
+                        }
+                        /*--------------极客社区子列表开始------------*/
+                        /*极客社区-子列表整体样式*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu i {
+                            background-image: url(CSSSprite.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 64px 64px;
+                            width: 14px;
+                            height: 14px;
+                            display: inline-block;
+                            margin-right: 10px!important;
+                        }
+                        /*极客社区-总数统计*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu span {
+                            float: right;
+                            color: #bbb;
+                        }
+                        /*极客社区-技术问答*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu .TechQuestion {
+                            background-position: 0 -27px;
+                        }
+                        /*极客社区-WiKi*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu .WiKi {
+                            background-position: -29px -27px;
+                        }
+                        /*极客社区-社群*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu .Community {
+                            background-position: 0 2px;
+                        }
+                        /*极客社区-资源下载*/
+                        
+                        .JiKeCommunity .JiKeCommunitySubmenu .SourceDownload {
+                            background-position: -30px 0;
+                        }
+                        /*--------------极客社区子列表结束------------*/
+                        /*------------------------------页头-极客社区结束------------------------------*/
+                        /*------------------------------页头-右侧部分开始------------------------------*/
+                        
+                        .HeadRight {
+                            text-align: right;
+                        }
+                        
+                        .HeadRight span {
+                            height: 57px;
+                            width: 17px;
+                            display: inline-block;
+                            margin-left: 25px;
+                            cursor: pointer;
+                        }
+                        /*------菜单顶部小箭头---------*/
+                        
+                        .TopIcon {
+                            transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            display: block;
+                            position: absolute;
+                            top: -8px;
+                            right: 10px;
+                            width: 15px;
+                            height: 15px;
+                            border-top: 1px solid #ececec;
+                            border-left: 1px solid #ececec;
+                            display: inline-block;
+                            background: #fff;
+                        }
+                        /*-------------搜索放大镜开始------------------*/
+                        
+                        .HeadRight .search {
+                            background-image: url(search-icon.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 17px;
+                            background-position: 0, 0;
+                        }
+                        
+                        .HeadRight .search:hover {
+                            background-image: url(search-icon2.png);
+                        }
+                        /*-------------搜索放大镜结束------------------*/
+                        /*-------------APP下载开始--------------------*/
+                        
+                        .HeadRight .AppDownload {
+                            background-image: url(app-icon.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 17px;
+                            background-position: 0;
+                        }
+                        
+                        .HeadRight .AppDownload:hover {
+                            background-image: url(app-icon2.png);
+                        }
+                        
+                        .HeadRight .AppDownload .submenu {
+                            padding: 0 1px;
+                            margin: 0;
+                            background: #fff;
+                            position: absolute;
+                            display: block;
+                            width: 120px;
+                            z-index: 1200;
+                            top: 61px;
+                            font-size: 12px;
+                            height: 0;
+                            overflow: hidden;
+                            transition-duration: .3s;
+                            transition-property: height;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .HeadRight .AppDownload.open .submenu {
+                            height: 160px;
+                            transition-duration: .3s;
+                            transition-property: height;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .HeadRight .AppDownload .submenu img {
+                            height: 160px;
+                        }
+                        /*-------------APP下载结束--------------------*/
+                        /*-------------个人信息开始--------------------*/
+                        
+                        .HeadRight .persionInformation {
+                            background-image: url(login-icon.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 17px;
+                            background-position: 0;
+                        }
+                        /*--------------个人信息下拉菜单开始-------------*/
+                        
+                        .HeadRight .persionInformation .submenu {
+                            padding: 0 12px;
+                            margin: 0;
+                            background: #fff;
+                            position: absolute;
+                            display: block;
+                            width: 130px;
+                            z-index: 1200;
+                            top: 61px;
+                            font-size: 12px;
+                            height: 0;
+                            overflow: hidden;
+                            transition-duration: .3s;
+                            transition-property: height;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .HeadRight .persionInformation.open .submenu {
+                            height: 180px;
+                            transition-duration: .3s;
+                            transition-property: height;
+                            transition-timing-function: ease-in;
+                        }
+                        
+                        .HeadRight .persionInformation .submenu dd {
+                            text-align: left;
+                            font-size: 12px;
+                            line-height: 35px;
+                            vertical-align: middle;
+                            margin: 0;
+                            text-align: left;
+                            padding-left: 10px;
+                        }
+                        
+                        .HeadRight .persionInformation .submenu dd a {
+                            text-decoration: none;
+                            color: #666;
+                        }
+                        
+                        .HeadRight .persionInformation .submenu dd:hover {
+                            background: #f5f5f5;
+                            color: #35b558;
+                        }
+                        
+                        .HeadRight .persionInformation .submenu dd:hover a {
+                            color: #35b558;
+                        }
+                        /*个人信息下来菜单图标样式*/
+                        
+                        .HeadRight .persionInformation .submenu i {
+                            background-image: url(personalcenter.png);
+                            background-origin: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 64px 64px;
+                            width: 12px;
+                            height: 12px;
+                            margin-right: 10px;
+                            display: inline-block;
+                        }
+                        /*----------注册----------*/
+                        
+                        .HeadRight .persionInformation .submenu dd .register {
+                            text-align: center;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                        
+                        .HeadRight .persionInformation .submenu dd .log {
+                            text-align: center;
+                            margin-left: 10px;
+                        }
+                        /*学习中心图标*/
+                        
+                        .HeadRight .persionInformation .submenu .StudyCenter-Icon {
+                            background-position: -16px -15px;
+                        }
+                        /*个人主页图标*/
+                        
+                        .HeadRight .persionInformation .submenu .PersonalPage-Icon {
+                            background-position: -45px -1px;
+                        }
+                        /*消息通知*/
+                        
+                        .HeadRight .persionInformation .submenu .Message-Icon {
+                            background-position: -16px -30px;
+                        }
+                        /*账号设置*/
+                        
+                        .HeadRight .persionInformation .submenu .Setting-Icon {
+                            background-position: -30px -1px;
+                        }
+                        /*--------------个人信息下拉菜单结束-------------*/
+                        /*-------------个人信息结束--------------------*/
+                        /*------------------------------页头-右侧部分结束------------------------------*/
+                        /*-------------------------------主体开始------------------------------------*/
+                        /*-------------------------------第一部分开始---------------------------------*/
+                        
+                        .part1 {
+                            width: 1000px;
+                            height: 480px;
+                            margin: 0 auto;
+                            margin-top: 10px!important;
+                            clear: both;
+                        }
+                        /*------------------------第一部分-轮播图片开始----------------------*/
+                        
+                        .part1 .jk-banner {
+                            height: 330px;
+                            width: 750px;
+                            float: left;
+                            background-color: #f5f5f5;
+                            overflow: hidden;
+                            margin-right: 10px;
+                        }
+                        
+                        .jk-banner .banner-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            cursor: grab;
+                        }
+                        
+                        .jk-banner .banner-container .banner-arrow-left {
+                            display: none;
+                            width: 50px;
+                            height: 80px;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            margin-top: -40px;
+                            z-index: 2;
+                            cursor: pointer;
+                            background: url(../img/jk-banner/left-arrow.png) no-repeat center;
+                            background-size: 50px 80px;
+                        }
+                        
+                        .jk-banner .banner-container .banner-arrow-right {
+                            display: none;
+                            width: 50px;
+                            height: 80px;
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            margin-top: -40px;
+                            z-index: 2;
+                            cursor: pointer;
+                            background: url(../img/jk-banner/left-arrow.png) no-repeat center;
+                            background-size: 50px 80px;
+                        }
+                        
+                        .jk-banner .banner-container:hover .banner-arrow-left {
+                            display: block;
+                        }
+                        
+                        .jk-banner .banner-container:hover .banner-arrow-right {
+                            display: block;
+                        }
+                        
+                        .jk-banner .banner-container .banner-arrow-right {
+                            display: none;
+                            width: 50px;
+                            height: 80px;
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            margin-top: -40px;
+                            z-index: 2;
+                            cursor: pointer;
+                            background: url(http://s1.jikexueyuan.com/index/images/arrow_dd5a57d.png) no-repeat center;
+                            background-size: 50px 80px;
+                            transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                        }
+                        
+                        .jk-banner .swiper-wrapper {
+                            width: 4500px;
+                            height: 330px;
+                            animation-name: banner;
+                            animation-duration: 25s;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: ease-out;
+                            -webkit-animation-name: banner;
+                            -webkit-animation-duration: 25s;
+                            -webkit-animation-iteration-count: infinite;
+                            -webkit-animation-timing-function: ease-out;
+                            -moz-animation-name: banner;
+                            -moz-animation-duration: 25s;
+                            -moz-animation-iteration-count: infinite;
+                            -moz-animation-timing-function: ease-out;
+                        }
+                        
+                        @keyframes banner {
+                            0% {
+                                transform: translate(0);
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                            }
+                            5% {
+                                transform: translate(0);
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                            }
+                            16% {
+                                transform: translate(-750px);
+                                -webkit-transform: translate(-750px);
+                                -moz-transform: translate(-750px);
+                            }
+                            24% {
+                                transform: translate(-750px);
+                                -webkit-transform: translate(-750px);
+                                -moz-transform: translate(-750px);
+                            }
+                            32% {
+                                transform: translate(-1500px);
+                                -webkit-transform: translate(-1500px);
+                                -moz-transform: translate(-1500px);
+                            }
+                            40% {
+                                transform: translate(-1500px);
+                                -webkit-transform: translate(-1500px);
+                                -moz-transform: translate(-1500px);
+                            }
+                            48% {
+                                transform: translate(-2250px);
+                                -webkit-transform: translate(-2250px);
+                                -moz-transform: translate(-2250px);
+                            }
+                            56% {
+                                transform: translate(-2250px);
+                                -webkit-transform: translate(-2250px);
+                                -moz-transform: translate(-2250px);
+                            }
+                            64% {
+                                transform: translate(-1500px);
+                                -webkit-transform: translate(-1500px);
+                                -moz-transform: translate(-1500px);
+                            }
+                            72% {
+                                transform: translate(-1500px);
+                                -webkit-transform: translate(-1500px);
+                                -moz-transform: translate(-1500px);
+                            }
+                            80% {
+                                transform: translate(-750px);
+                                -webkit-transform: translate(-750px);
+                                -moz-transform: translate(-750px);
+                            }
+                            88% {
+                                transform: translate(-750px);
+                                -webkit-transform: translate(-750px);
+                                -moz-transform: translate(-750px);
+                            }
+                            96% {
+                                transform: translate(0);
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                            }
+                        }
+                        
+                        .jk-banner .swiper-slide {
+                            position: relative;
+                            float: left;
+                            width: 750px;
+                            height: 330px!important;
+                        }
+                        
+                        .jk-banner .swiper-slide:nth-child(1) {
+                            background: url(../img/jk-banner/1.jpg) center center no-repeat #fff;
+                        }
+                        
+                        .jk-banner .swiper-slide:nth-child(2) {
+                            background: url(../img/jk-banner/2.jpg) center center no-repeat #fff;
+                        }
+                        
+                        .jk-banner .swiper-slide:nth-child(3) {
+                            background: url(../img/jk-banner/3.jpg) center center no-repeat #fff;
+                        }
+                        
+                        .jk-banner .swiper-slide:nth-child(4) {
+                            background: url(../img/jk-banner/4.jpg) center center no-repeat #fff;
+                        }
+                        /*----------------------底部选择图形开始----------------------*/
+                        
+                        .jk-banner .banner-container .banner-pagination {
+                            position: absolute;
+                            left: 0;
+                            bottom: 36px;
+                            text-align: center;
+                            width: 100%;
+                            z-index: 800;
+                            height: 0;
+                            cursor: pointer;
+                        }
+                        
+                        .jk-banner .swiper-pagination-switch {
+                            display: inline-block;
+                            margin-right: 8px;
+                            text-align: center;
+                            width: 8px;
+                            height: 8px;
+                            background: #fff;
+                            vertical-align: middle;
+                            cursor: pointer;
+                        }
+                        /*----------------------底部选择图形结束----------------------*/
+                        /*------------------------第一部分-轮播图片结束----------------------*/
+                        /*--------------------------第一部分-登录注册开始----------------------------*/
+                        
+                        .part1 .jk-login {
+                            float: left;
+                            width: 240px;
+                            height: 160px;
+                            box-sizing: border-box;
+                            border: 1px solid #e9e9e9;
+                            background-color: #fff;
+                            padding: 26px 29px 24px;
+                        }
+                        
+                        .jk-login .userInfo {
+                            height: 57px;
+                        }
+                        
+                        .jk-login .userImg {
+                            float: left;
+                            width: 57px;
+                            height: 57px;
+                            border-radius: 50%;
+                            margin-right: 15px;
+                        }
+                        
+                        .jk-login .userName {
+                            float: left;
+                            font-size: 12px;
+                            color: #555;
+                            line-height: 16px;
+                            height: 16px;
+                            width: 108px;
+                            margin-top: 8px;
+                            overflow: hidden;
+                        }
+                        
+                        .jk-login .userStatus {
+                            float: left;
+                            font-size: 12px;
+                            color: #555;
+                            line-height: 16px;
+                            height: 16px;
+                            width: 108px;
+                            margin-top: 10px;
+                        }
+                        
+                        .jk-login .loginOn,
+                        .jk-login .registerNow {
+                            font-size: 14px;
+                            float: left;
+                            display: inline-block;
+                            width: 85px;
+                            height: 32px;
+                            border: 1px solid #35b558;
+                            border-radius: 2px;
+                            color: #35b558;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-top: 20px;
+                            transition: background .8s;
+                            -moz-transition: background .8s;
+                            -webkit-transition: background .8s;
+                            -o-transition: background .8s;
+                        }
+                        
+                        .jk-login .loginOn {
+                            margin-right: 10px;
+                        }
+                        
+                        .jk-login .loginOn:hover,
+                        .jk-login .registerNow:hover {
+                            background: #35b558;
+                            color: #fff;
+                        }
+                        /*--------------------------第一部分-登录注册结束----------------------------*/
+                        
+                        .part1 .jk-houdong {
+                            float: left;
+                            width: 240px;
+                            height: 160px;
+                            margin-top: 10px;
+                            overflow: hidden;
+                            background-color: beige;
+                        }
+                        /*----------------------------第一部分-就业班开始------------------------------*/
+                        
+                        .part1 .jk-jiuye {
+                            float: left;
+                            height: 130px;
+                            width: 100%;
+                            margin-top: 20px;
+                            background-color: #fff;
+                            position: relative;
+                        }
+                        
+                        .jk-jiuye a {
+                            float: left;
+                            width: 200px;
+                            height: 130px;
+                            border: 1px solid #f0f0f0;
+                            border-left: 0;
+                            color: #555;
+                            text-align: center;
+                            padding-top: 90px;
+                            font-size: 12px;
+                            transition: color .5s;
+                            -moz-transition: color .5s;
+                            -webkit-transition: color .5s;
+                            -o-transition: color .5s;
+                        }
+                        
+                        .jk-jiuye a:hover {
+                            color: #35b558;
+                        }
+                        
+                        .jk-jiuye a:first-child i {
+                            display: inline-block;
+                            position: absolute;
+                            width: 52px;
+                            height: 52px;
+                            top: 0;
+                            left: 0;
+                            background: url(../img/jk-jiuye/tag.png) no-repeat center;
+                            background-size: 52px;
+                        }
+                        
+                        .jk-jiuye a:first-child {
+                            border-left: 1px solid #f0f0f0;
+                            background: url(../img/jk-jiuye/php.png) no-repeat center 20px;
+                            background-size: 130px 65px;
+                        }
+                        
+                        .jk-jiuye a:nth-child(2) {
+                            background: url(../img/jk-jiuye/web.png) no-repeat center 20px;
+                            background-size: 130px 65px;
+                        }
+                        
+                        .jk-jiuye a:nth-child(3) {
+                            background: url(../img/jk-jiuye/android.png) no-repeat center 20px;
+                            background-size: 130px 65px;
+                        }
+                        
+                        .jk-jiuye a:nth-child(4) {
+                            background: url(../img/jk-jiuye/ios.png) no-repeat center 20px;
+                            background-size: 130px 65px;
+                        }
+                        
+                        .jk-jiuye a:nth-child(5) {
+                            background: url(../img/jk-jiuye/java.png) no-repeat center 20px;
+                            background-size: 130px 65px;
+                        }
+                        /*----------------------------第一部分-就业班结束------------------------------*/
+                        /*----------------------------第一部分-滚动图像开始----------------------------*/
+                        /*----------------------------第一部分-滚动图像结束----------------------------*/
+                        /*-------------------------------第一部分结束---------------------------------*/
+                        /*-----------------------------第二部分-推荐课程开始---------------------------*/
+                        
+                        .jk-sku {
+                            width: 1000px;
+                            height: 270px;
+                            margin: 0 auto;
+                            margin-top: 20px;
+                            box-sizing: border-box;
+                            margin-bottom: 40px;
+                        }
+                        
+                        .jk-sku ul {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .jk-sku ul li {
+                            float: left;
+                            width: 235px;
+                            height: 100%;
+                            margin-right: 20px;
+                            border: 1px solid #e9e9e9;
+                            transition: box-shadow .5s;
+                            -moz-transition: box-shadow .5s;
+                            -webkit-transition: box-shadow .5s;
+                            -o-transition: box-shadow .5s;
+                        }
+                        
+                        .jk-sku ul li:hover {
+                            border: 1px solid #e9e9e9;
+                            box-shadow: 0 2px 6px #ccc;
+                        }
+                        
+                        .jk-sku ul li:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .jk-sku ul li a {
+                            display: block;
+                            height: 100%;
+                        }
+                        
+                        .jk-sku ul li img {
+                            width: 100%;
+                            height: 155px;
+                        }
+                        /*解说文字容器*/
+                        
+                        .jk-sku ul li div {
+                            padding: 14px;
+                            height: 113px;
+                            position: relative;
+                            background-color: #fff;
+                        }
+                        
+                        .jk-sku ul li div .skuTitle {
+                            width: 100%;
+                            overflow: hidden;
+                            font-size: 12px;
+                            color: #555;
+                            line-height: 18px;
+                            height: 36px;
+                        }
+                        
+                        .jk-sku ul li div .skuInfo {
+                            margin-top: 6px;
+                            color: #999;
+                            font-size: 12px;
+                            line-height: 16px;
+                            height: 16px;
+                        }
+                        
+                        .jk-sku ul li div .skuPrice {
+                            float: left;
+                            font-size: 18px;
+                            color: #ff5c00;
+                            vertical-align: bottom;
+                            margin-right: 5px;
+                            margin-top: 8px;
+                        }
+                        
+                        .jk-sku ul li div .skuPrePrice {
+                            float: left;
+                            font-size: 14px;
+                            color: #999;
+                            margin-top: 14px;
+                            text-decoration: line-through;
+                            vertical-align: bottom;
+                        }
+                        
+                        .jk-sku ul li div .skuNum {
+                            display: inline-block;
+                            height: 14px;
+                            position: absolute;
+                            bottom: 14px;
+                            right: 14px;
+                            color: #999;
+                            font-size: 12px;
+                        }
+                        /*-----------------------------第二部分-推荐课程结束---------------------------*/
+                        /*-----------------------------第三部分-职业学院开始---------------------------*/
+                        
+                        .jk-college {
+                            width: 1000px;
+                            margin: 0 auto;
+                            height: 310px;
+                            margin-bottom: 40px;
+                        }
+                        /*职业学院标题*/
+                        
+                        .jk-college h2 {
+                            font-size: 18px;
+                            color: #555;
+                            line-height: 18px;
+                            height: 18px;
+                            margin-bottom: 22px;
+                        }
+                        /*职业学院子目录统一样式*/
+                        
+                        .jk-college ul li {
+                            float: left;
+                            background-color: #ccc;
+                            width: 240px;
+                            height: 130px;
+                            margin-left: 10px;
+                            position: relative;
+                        }
+                        /*职业学院子目录图片统一样式*/
+                        
+                        .jk-college ul li img {
+                            display: inline-block;
+                            width: 240px;
+                            height: 130px;
+                        }
+                        /*职业学院-背景渐变总样式*/
+                        
+                        .jk-college ul li i {
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #000;
+                            opacity: 0;
+                            transition: opacity .8s;
+                            -moz-transition: opacity .8s;
+                            -webkit-transition: opacity .8s;
+                            -o-transition: opacity .8s;
+                        }
+                        
+                        .jk-college ul li:hover i {
+                            opacity: .3;
+                            transition: opacity .8s;
+                            -moz-transition: opacity .8s;
+                            -webkit-transition: opacity .8s;
+                            -o-transition: opacity .8s;
+                        }
+                        /*职业学院-子目录图片总样式*/
+                        
+                        .jk-college ul li span {
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 14px;
+                            padding-top: 88px;
+                        }
+                        /*职业学院-前端工程师-开始*/
+                        
+                        .jk-college ul .web {
+                            width: 500px;
+                            height: 270px;
+                            margin-left: 0;
+                        }
+                        
+                        .jk-college ul li a {
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .jk-college ul .web img {
+                            display: inline-block;
+                            width: 500px;
+                            height: 270px;
+                        }
+                        
+                        .jk-college ul .web span {
+                            padding-top: 180px;
+                            font-size: 20px;
+                            background: url(../img/jk-college/jk-college-web.png) no-repeat center 70px;
+                            background-size: 55px 84px;
+                        }
+                        /*职业学院-前端工程师-结束*/
+                        /*职业学院-PythonWeb工程师-开始*/
+                        
+                        .jk-college ul .python {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .jk-college ul .python span {
+                            background: url(../img/jk-college/jk-college-python.png) no-repeat center 31px;
+                            background-size: 36px 36px;
+                        }
+                        /*职业学院-PythonWeb工程师-结束*/
+                        /*职业学院-Go工程师-开始*/
+                        
+                        .jk-college ul .go {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .jk-college ul .go span {
+                            background: url(../img/jk-college/jk-college-go.png) no-repeat center 33px;
+                            background-size: 36px 29px;
+                        }
+                        /*职业学院-Go工程师-结束*/
+                        /*职业学院-iOS工程师-开始*/
+                        
+                        .jk-college ul .ios {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .jk-college ul .ios span {
+                            background: url(../img/jk-college/jk-college-ios.png) no-repeat center 36px;
+                            background-size: 32px 36px;
+                        }
+                        /*职业学院-iOS工程师-结束*/
+                        /*职业学院-更多课程-开始*/
+                        
+                        .jk-college ul .more {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .jk-college ul .more a {
+                            cursor: default;
+                        }
+                        
+                        .jk-college ul .more span {
+                            background: url(../img/jk-college/jk-college-more.png) no-repeat center 36px;
+                            background-size: 36px 36px;
+                        }
+                        
+                        .jk-college ul .more:hover i {
+                            opacity: 0;
+                        }
+                        /*职业学院-更多课程-结束*/
+                        /*-----------------------------第三部分-职业学院结束---------------------------*/
+                        /*-----------------------------第四部分-VIP课程开始---------------------------*/
+                        /*VIP课程整体样式开始*/
+                        
+                        .jk-vip {
+                            width: 1000px;
+                            margin: 0 auto;
+                            height: 420px;
+                            box-sizing: border-box;
+                        }
+                        /*VIP课程整体样式结束*/
+                        /*VIP课程标题开始*/
+                        
+                        .jk-vip h2 {
+                            font-size: 18px;
+                            color: #555;
+                            height: 18px;
+                            line-height: 18px;
+                            margin-bottom: 22px;
+                        }
+                        /*VIP课程标题结束*/
+                        /*VIP课程子菜单开始*/
+                        /*VIP课程子菜单样式总样式开始*/
+                        
+                        .jk-vip ul {
+                            width: 100%;
+                            height: 310px;
+                        }
+                        
+                        .jk-vip ul li {
+                            float: left;
+                            width: 158px;
+                            height: 150px;
+                            border: 1px solid #e9e9e9;
+                            background-color: #fff;
+                            margin-right: 10px;
+                            transition: box-shadow .5s;
+                            -moz-transition: box-shadow .5s;
+                            -webkit-transition: box-shadow .5s;
+                            -o-transition: box-shadow .5s;
+                        }
+                        
+                        .jk-vip ul li:nth-child(6),
+                        .jk-vip ul li:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .jk-vip ul li:nth-child(7),
+                        .jk-vip ul li:nth-child(8),
+                        .jk-vip ul li:nth-child(9),
+                        .jk-vip ul li:nth-child(10),
+                        .jk-vip ul li:nth-child(11),
+                        .jk-vip ul li:nth-child(12) {
+                            margin-top: 10px;
+                        }
+                        
+                        .jk-vip ul li:hover {
+                            border: 1px solid #e1e2e1;
+                            box-shadow: 0 2px 6px #ccc;
+                        }
+                        
+                        .jk-vip ul li a {
+                            display: block;
+                            height: 100%;
+                            text-align: center;
+                        }
+                        
+                        .jk-vip ul li a img {
+                            display: inline-block;
+                            width: 55px;
+                            height: 55px;
+                            margin-top: 25px;
+                        }
+                        
+                        .jk-vip ul li a p {
+                            font-size: 12px;
+                            color: #555;
+                            height: 22px;
+                            line-height: 22px;
+                        }
+                        
+                        .jk-vip ul li a span {
+                            display: block;
+                            font-size: 12px;
+                            color: #35b558;
+                            height: 22px;
+                            line-height: 22px;
+                        }
+                        /*VIP课程子菜单样式总样式结束*/
+                        /*VIP课程子菜单结束*/
+                        
+                        .jk-vip .vipAll {
+                            display: inline-block;
+                            margin-top: 38px;
+                            height: 32px;
+                            line-height: 30px;
+                            border: 1px solid #35b558;
+                            border-radius: 2px;
+                            width: 120px;
+                            font-size: 14px;
+                            color: #35b558;
+                            text-align: center;
+                            position: relative;
+                            left: 50%;
+                            margin-left: -60px;
+                            transition: background .8s;
+                            -moz-transition: background .8s;
+                            -webkit-transition: background .8s;
+                            -o-transition: background .8s;
+                        }
+                        
+                        .jk-vip .vipAll:hover {
+                            background: #35b558;
+                            color: #fff;
+                        }
+                        /*-----------------------------第四部分-VIP课程结束---------------------------*/
+                        /*-----------------------------第五部分-学员故事开始---------------------------*/
+                        
+                        .jk-story {
+                            width: 1000px;
+                            margin: 0 auto;
+                            height: 300px;
+                            margin-bottom: 40px;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                        }
+                        
+                        .jk-story h2 {
+                            font-size: 18px;
+                            color: #555;
+                            height: 18px;
+                            line-height: 18px;
+                            margin-bottom: 22px;
+                        }
+                        
+                        .jk-story .story-container {
+                            cursor: grab;
+                            width: 100%;
+                            height: 260px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        
+                        .jk-story .swiper-wrapper {
+                            width: 2000px;
+                            height: 260px;
+                            animation-name: jk-storys;
+                            animation-direction: reverse;
+                            animation-iteration-count: infinite;
+                            animation-duration: 8s;
+                            -webkit-animation-name: jk-storys;
+                            -webkit-animation-direction: reverse;
+                            -webkit-animation-iteration-count: infinite;
+                            -webkit-animation-duration: 8s;
+                            -moz-animation-name: jk-storys;
+                            -moz-animation-direction: reverse;
+                            -moz-animation-iteration-count: infinite;
+                            -moz-animation-duration: 8s;
+                        }
+                        
+                        @keyframes jk-storys {
+                            0% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            10% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            20% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            30% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            40% {
+                                -webkit-transform: translate(-1000px);
+                                -moz-transform: translate(-1000px);
+                                transform: translate(-1000px);
+                            }
+                            50% {
+                                -webkit-transform: translate(-1000px);
+                                -moz-transform: translate(-1000px);
+                                transform: translate(-1000px);
+                            }
+                            60% {
+                                -webkit-transform: translate(-1000px);
+                                -moz-transform: translate(-1000px);
+                                transform: translate(-1000px);
+                            }
+                            70% {
+                                -webkit-transform: translate(-1000px);
+                                -moz-transform: translate(-1000px);
+                                transform: translate(-1000px);
+                            }
+                            80% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            90% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                            100% {
+                                -webkit-transform: translate(0);
+                                -moz-transform: translate(0);
+                                transform: translate(0);
+                            }
+                        }
+                        
+                        .jk-story .swiper-slide {
+                            width: 1000px;
+                            height: 260px;
+                            position: relative;
+                            text-align: center;
+                            float: left;
+                            background: #f5f5f5!important;
+                        }
+                        
+                        .jk-story ul {
+                            height: 200px;
+                            width: 100%;
+                        }
+                        
+                        .jk-story ul li {
+                            float: left;
+                            width: 320px;
+                            height: 200px;
+                            position: relative;
+                            margin-right: 20px;
+                            transition: box-shadow .5s;
+                            -moz-transition: box-shadow .5s;
+                            -webkit-transition: box-shadow .5s;
+                            -o-transition: box-shadow .5s;
+                        }
+                        
+                        .jk-story ul li:nth-child(3) {
+                            margin-right: 0;
+                        }
+                        
+                        .jk-story ul li a {
+                            display: block;
+                            height: 100%;
+                        }
+                        
+                        .jk-story ul .story-content {
+                            width: 100%;
+                            height: 121px;
+                            border: 1px solid #e9e9e9;
+                            background: #fff;
+                            position: relative;
+                        }
+                        
+                        .jk-story ul li:hover .story-content {
+                            border: 1px solid #e9e9e9;
+                            box-shadow: 0 2px 6px #ccc;
+                        }
+                        
+                        .jk-story ul .story-info {
+                            height: 80px;
+                            padding-left: 95px;
+                            padding-top: 28px;
+                            position: relative;
+                        }
+                        
+                        .jk-story ul .story-content:before {
+                            content: '';
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-top: 12px solid #e9e9e9;
+                            border-left: 6px solid transparent;
+                            border-right: 6px solid transparent;
+                            position: absolute;
+                            bottom: -12px;
+                            left: 46px;
+                        }
+                        
+                        .jk-story ul .story-content p {
+                            height: 100%;
+                            overflow: hidden;
+                            font-size: 12px;
+                            color: #555;
+                            line-height: 20px;
+                            padding: 20px 25px;
+                            text-align: left;
+                        }
+                        
+                        .jk-story ul .story-content p:before {
+                            content: '';
+                            display: inline-block;
+                            width: 14px;
+                            height: 10px;
+                            background: url(../img/jk-story/storyicon1.png) no-repeat center;
+                            background-size: 14px 10px;
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                        }
+                        
+                        .jk-story ul .story-content p:after {
+                            content: '';
+                            display: inline-block;
+                            width: 14px;
+                            height: 10px;
+                            background: url(http://s1.jikexueyuan.com/index/images/storyicon_4a5e270.png) no-repeat center;
+                            background-size: 14px 10px;
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                            transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                        }
+                        
+                        .jk-story ul .story-info {
+                            height: 80px;
+                            padding-left: 95px;
+                            padding-top: 28px;
+                            position: relative;
+                        }
+                        
+                        .jk-story ul .story-info img {
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: 1px solid #e9e9e9;
+                        }
+                        
+                        .jk-story ul .story-info p {
+                            font-size: 12px;
+                            color: #555;
+                            height: 24px;
+                            line-height: 24px;
+                            overflow: hidden;
+                            text-align: left;
+                        }
+                        
+                        .jk-story ul .story-info span {
+                            display: block;
+                            height: 24px;
+                            line-height: 24px;
+                            color: #999;
+                            font-size: 12px;
+                            text-align: left;
+                        }
+                        
+                        .story-pagination {
+                            position: absolute;
+                            left: 0;
+                            bottom: 16px;
+                            text-align: center;
+                            width: 100%;
+                            z-index: 800;
+                            height: 0;
+                            cursor: pointer;
+                        }
+                        
+                        .story-pagination .swiper-pagination-switch {
+                            display: inline-block;
+                            margin-right: 8px;
+                            text-align: center;
+                            width: 8px;
+                            height: 8px;
+                            background: #bbb;
+                            vertical-align: middle;
+                            cursor: pointer;
+                        }
+                        /*-----------------------------第五部分-学员故事结束---------------------------*/
+                        /*-----------------------------第六部分-合作伙伴开始---------------------------*/
+                        
+                        .jk-partner {
+                            width: 1000px;
+                            margin: 0 auto;
+                            height: 240px;
+                            margin-bottom: 40px;
+                            box-sizing: border-box;
+                        }
+                        /*合作伙伴-标题*/
+                        
+                        .jk-partner h2 {
+                            font-size: 18px;
+                            color: #555;
+                            height: 18px;
+                            line-height: 18px;
+                            margin-bottom: 22px;
+                        }
+                        /*合作伙伴-子列表开始*/
+                        
+                        .jk-partner ul {
+                            width: 100%;
+                            height: 120px;
+                        }
+                        
+                        .jk-partner ul li {
+                            float: left;
+                            width: 150px;
+                            height: 50px;
+                            border: !px solid #e9e9e9;
+                            background-color: #fff;
+                            margin-right: 20px;
+                            transition: box-shadow .5s;
+                            -moz-transition: box-shadow .5s;
+                            -webkit-transition: box-shadow .5s;
+                            -o-transition: box-shadow .5s;
+                        }
+                        
+                        .jk-partner ul li:hover {
+                            border: 1px solid #e1e2e1;
+                            box-shadow: 0 2px 6px #ccc;
+                        }
+                        
+                        .jk-partner ul li:nth-child(6),
+                        .jk-partner ul li:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .jk-partner ul li:nth-child(n+7) {
+                            margin-top: 20px;
+                        }
+                        
+                        .jk-partner ul li a {
+                            display: block;
+                            height: 100%;
+                        }
+                        
+                        .jk-partner ul li:nth-child(1) a {
+                            background: url(../img/jk-partner/microsoft.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(2) a {
+                            background: url(../img/jk-partner/Tencent.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(3) a {
+                            background: url(../img/jk-partner/qcloud.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(4) a {
+                            background: url(../img/jk-partner/qualcomm.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(5) a {
+                            background: url(../img/jk-partner/cocos2d.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(6) a {
+                            background: url(../img/jk-partner/amd.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(7) a {
+                            background: url(../img/jk-partner/xunfei.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(8) a {
+                            background: url(../img/jk-partner/tuling.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(9) a {
+                            background: url(../img/jk-partner/tingyun.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(10) a {
+                            background: url(../img/jk-partner/juhe.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(11) a {
+                            background: url(../img/jk-partner/bootstrap.png) no-repeat center;
+                        }
+                        
+                        .jk-partner ul li:nth-child(12) a {
+                            background: url(../img/jk-partner/cloudstack.png) no-repeat center;
+                        }
+                        /*合作伙伴-子列表结束*/
+                        /*合作伙伴-更多合作企业开始*/
+                        
+                        .jk-partner .more-partner {
+                            display: inline-block;
+                            margin-top: 38px;
+                            height: 32px;
+                            line-height: 30px;
+                            border: 1px solid #35b558;
+                            border-radius: 2px;
+                            width: 120px;
+                            font-size: 14px;
+                            color: #35b558;
+                            text-align: center;
+                            position: relative;
+                            left: 50%;
+                            margin-left: -60px;
+                            transition: background .8s;
+                            -moz-transition: background .8s;
+                            -webkit-transition: background .8s;
+                            -o-transition: background .8s;
+                        }
+                        
+                        .jk-partner .more-partner:hover {
+                            background: #35b558;
+                            color: #fff;
+                        }
+                        /*合作伙伴-更多合作企业结束*/
+                        /*-----------------------------第六部分-合作伙伴结束---------------------------*/
+                        /*-------------------------------主体结束------------------------------------*/
+                        /*-------------------------------底部开始------------------------------------*/
+                        
+                        footer {
+                            min-width: 1000px;
+                            border: 1px solid #e4e4e4;
+                            background-color: #fff;
+                            margin-top: 50px!important;
+                            margin-bottom: 20px;
+                        }
+                        
+                        footer .jkinfor-block {
+                            background-color: #fff;
+                            box-sizing: border-box;
+                        }
+                        
+                        footer .copyright {
+                            font-size: 12px;
+                            color: #999;
+                            margin: 0 auto;
+                            width: 1000px;
+                            text-align: center;
+                            padding: 15px 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        .jkinfor-block .jkinfor {
+                            position: relative;
+                            width: 1000px;
+                            height: 215px;
+                            margin: 0 auto;
+                            border-bottom: 1px solid #f5f5f5;
+                            padding-left: 224px;
+                            padding-top: 25px;
+                            box-sizing: border-box;
+                            background-color: #fff;
+                        }
+                        
+                        .jkinfor-block .jkinfor .jk-logo {
+                            position: absolute;
+                            left: 0;
+                            top: 25px;
+                            display: inline-block;
+                            width: 160px;
+                        }
+                        
+                        .jkinfor-block .jkinfor .jk-logo img {
+                            width: 109px;
+                            height: 40px;
+                            display: block;
+                        }
+                        
+                        .jkinfor-block .jkinfor .jk-logo p {
+                            font-size: 12px;
+                            color: #999;
+                            margin-top: 20px;
+                        }
+                        
+                        .jkinfor-block .jkinfor dl {
+                            width: 135px;
+                            color: #808080;
+                            float: left;
+                        }
+                        
+                        .jkinfor-block .jkinfor dl dt {
+                            font-size: 14px;
+                            line-height: 30px;
+                        }
+                        
+                        .jkinfor dl dd {
+                            font-size: 12px;
+                            line-height: 30px;
+                        }
+                        
+                        .jkinfor dl dd a {
+                            color: #999999;
+                        }
+                        
+                        .jkinfor a:hover {
+                            color: #35b558;
+                        }
+                        
+                        #footer .jk-download {
+                            position: absolute;
+                            right: 0;
+                            top: 25px;
+                            display: inline-block;
+                            width: 175px;
+                            text-align: left;
+                            box-sizing: border-box;
+                        }
+                        
+                        .jk-download .hot-tel {
+                            color: #808080;
+                            font-size: 14px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .jk-download .downCon {
+                            position: relative;
+                            display: inline-block;
+                            width: 140px;
+                            height: 30px;
+                            border: 1px solid #eeeeee;
+                            margin-bottom: 10px;
+                            line-height: 30px;
+                            color: #808080;
+                            font-size: 13px;
+                            padding-left: 40px;
+                            cursor: pointer;
+                        }
+                        
+                        .jk-download .down-ios {
+                            background: url(../img/footer/icon-down-ios.png) no-repeat 0 0;
+                            background-size: 30px 30px;
+                        }
+                        
+                        .jk-download .down-and {
+                            background: url(../img/footer/icon-down-and.png) no-repeat 0 0;
+                            background-size: 30px 30px;
+                        }
+                        
+                        .jk-download .downCon img {
+                            display: inline-block;
+                            width: 115px;
+                            height: 153px;
+                            position: absolute;
+                            top: -157px;
+                            left: 12px;
+                            z-index: 2;
+                            display: none;
+                        }
+                        
+                        .jk-download .downCon:hover img {
+                            display: block;
+                        }
+                        
+                        .copyright {
+                            font-size: 12px;
+                            color: #999;
+                            margin: 0 auto;
+                            width: 1000px;
+                            text-align: center;
+                            padding: 15px 0;
+                        }
+                        
+                        .copyright strong {
+                            font-weight: 400;
+                        }
+                        
+                        .copyright strong:hover a {
+                            color: #35b558;
+                        }
+                        
+                        .copyright a {
+                            color: #999;
+                        }
+                        
+                        .copyright a.down-wechat {
+                            float: right;
+                            height: 15px;
+                            width: 20px;
+                            background: url(../img/footer/icon-down-wechat.png) no-repeat 0 0;
+                            background-size: 18px 15px;
+                        }
+                        
+                        .copyright a.down-sina {
+                            float: right;
+                            height: 15px;
+                            width: 20px;
+                            background: url(../img/footer/icon-down-sina.png) no-repeat 0 0;
+                            background-size: 20px 15px;
+                            margin-right: 10px;
+                        }
+                        
+                        .copyright .footer-bottom-logo {
+                            display: block;
+                            margin: 15px auto 0;
+                        }
+                        
+                        .copyright .footer-bottom-logo img {
+                            width: 60px;
+                            border: 0;
+                        }
+                        /*-------------------------------底部结束------------------------------------*/
+                        /*---------------------------右侧悬浮区域开始---------------------------------*/
+                        
+                        .sidebar {
+                            position: fixed;
+                            left: 50%;
+                            bottom: 70px;
+                            margin-left: 510px;
+                            width: 34px;
+                            text-align: center;
+                            z-index: 2000;
+                        }
+                        
+                        .sidebar .top {
+                            display: block;
+                            background: url(../img/jk-sidebar/gotop.jpg) 0 0 no-repeat;
+                            background-size: 34px 103px;
+                            width: 34px;
+                            height: 34px;
+                        }
+                        
+                        .sidebar .top:hover {
+                            background: url(../img/jk-sidebar/gotop_hover.jpg) 0 0 no-repeat;
+                            background-size: 34px 103px;
+                            width: 34px;
+                            height: 34px;
+                        }
+                        
+                        .sidebar .jk-app {
+                            position: relative;
+                            display: block;
+                            background: url(../img/jk-sidebar/phone.png) center center no-repeat;
+                            background-color: #ebebeb;
+                            background-size: 12px 24px;
+                            width: 34px;
+                            height: 35px;
+                            border-bottom: 1px solid #e0e0e0;
+                        }
+                        
+                        .sidebar .jk-app:hover {
+                            background: url(../img/jk-sidebar/phone-hover.png) center center no-repeat;
+                            background-size: 12px 24px;
+                        }
+                        
+                        .sidebar .appMatrixCode {
+                            background: url(../img/jk-sidebar/appdownload.png) center center no-repeat;
+                            background-size: 100%;
+                            width: 126px;
+                            height: 159px;
+                            position: absolute;
+                            z-index: 2100;
+                            left: -126px;
+                            top: -70px;
+                            display: none;
+                        }
+                        
+                        .sidebar .jk-app:hover .appMatrixCode {
+                            display: block;
+                        }
+                        
+                        .sidebar img {
+                            opacity: 0.9;
+                            height: 34px;
+                            width: 34px;
+                        }
+                        /*---------------------------右侧悬浮区域结束---------------------------------*/

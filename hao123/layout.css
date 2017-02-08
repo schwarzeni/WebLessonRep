@@ -1,0 +1,524 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f8;
+}
+
+
+/*                     顶部开始                               */
+
+header {
+    height: 60px;
+    border-bottom: .1px solid #f2f2f2;
+}
+
+
+/*顶部内容*/
+
+header .headContent {
+    width: 1190px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+
+/*顶部内容定位*/
+
+header .headContent div {
+    float: left;
+}
+
+
+/*顶部内容悬浮效果*/
+
+.headLeftContent div:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+
+/*顶部图像悬浮效果*/
+
+.headLeftContent .headImg:hover {
+    background-color: #ffffff;
+}
+
+
+/*顶部设置为首页*/
+
+header .headContent .setHomePage {
+    background-color: #07ac72;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 2px 5px;
+    width: 37px;
+}
+
+
+/*顶部天气*/
+
+header .headContent .headWeather {
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #999;
+    vertical-align: inherit;
+}
+
+
+/*顶部天气旁小角*/
+
+header .headContent .headWeather .headWeatherArray {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #999;
+    display: inline-block;
+    border-top: none;
+    border-right: none;
+    margin-top: -2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/*顶部天气图像*/
+
+header .headContent .headWeather .headWeatherImg {
+    background-image: url(img/weatherImg_Cloud.png);
+    background-position: 0 14px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 60px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/*顶部右侧内容*/
+
+.headRightContent {
+    float: right!important;
+    margin-right: 30px;
+    height: 60px;
+}
+
+
+/*顶部右侧内容布局*/
+
+.headRightContent div {
+    width: 60px;
+    font-size: 13px;
+    color: #999;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*顶部右侧内容悬浮效果*/
+
+.headRightContent div:hover {
+    background-color: #ededed;
+}
+
+
+/*                     顶部结束                               */
+
+
+/*搜索框开始*/
+
+
+/*搜索框整体样式*/
+
+.research {
+    margin-top: 25px;
+    height: 80px;
+}
+
+
+/*搜索框定位*/
+
+.researchWrapper {
+    width: 1020px;
+    position: absolute;
+    margin-left: 50%;
+    left: -510px;
+}
+
+
+/*搜索框内部定位*/
+
+.research div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*搜索框左部图片*/
+
+.leftImg {
+    width: 150px;
+    height: 70px;
+    background: url(img/baidu00.png) 8px -200px no-repeat;
+}
+
+
+/*搜索框输入样式*/
+
+.searchInput input {
+    width: 539px;
+    height: 46px;
+    border: 1px solid #999;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+/*搜索框提交按钮定位*/
+
+.submitButton {
+    margin-left: -5px;
+}
+
+
+/*搜索框提交按钮定位*/
+
+.submitButton input {
+    width: 120px;
+    height: 46px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*最右侧改变颜色选项定位*/
+
+.changeColor {
+    margin-left: 40px;
+}
+
+
+/*最右侧改变颜色选项样式*/
+
+.changeColor div {
+    cursor: pointer;
+}
+
+
+/*最右侧改变颜色选项样式*/
+
+.changeColor div {
+    margin-right: 10px;
+    font-size: 30px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/*第一个悬浮显示色*/
+
+#color1:hover {
+    color: #07ac72;
+}
+
+
+/*第二个悬浮显示色*/
+
+#color2:hover {
+    color: #b09880;
+}
+
+
+/*第三个悬浮显示色*/
+
+#color3:hover {
+    color: #281383;
+}
+
+
+/*第四个悬浮显示色*/
+
+#color4:hover {
+    color: #de1c1c;
+}
+
+
+/*第五个悬浮显示色*/
+
+#color5:hover {
+    color: #999;
+}
+
+
+/*搜索框结束*/
+
+
+/*导航栏开始*/
+
+
+/*导航栏整体布局*/
+
+.wrapper {
+    width: 1130px;
+    margin: 0 auto;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+    margin-top: 30px;
+}
+
+
+/*导航栏目录样式*/
+
+.wrapper .ul1 li {
+    float: left;
+    list-style: none;
+    width: 105px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+
+
+/*导航栏第一行目录样式*/
+
+.wrapper .ul1 li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*导航栏目录悬浮样式*/
+
+.wrapper .ul1 li a:hover {
+    color: #07ac72;
+}
+
+
+/*导航栏第一个"首页"样式*/
+
+#ulHead {
+    margin-left: 0;
+    background-color: #07ac72;
+    color: #fff;
+    width: 80px;
+}
+
+
+/*导航栏第一个"首页"样式*/
+
+.wrapper .ul1 li:nth-child(11) {
+    border: 0;
+}
+
+
+/*导航栏第二行样式*/
+
+.wrapper .ul2 {
+    height: 80px;
+    border-bottom: 1px solid #84d7ba;
+    border-left: 1px solid #84d7ba;
+    border-right: 1px solid #84d7ba;
+}
+
+
+/*导航栏第二行样式*/
+
+.wrapper .ul2 li {
+    float: left;
+    list-style: none;
+    width: 86px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-left: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+
+
+/*导航栏第二行样式*/
+
+.wrapper .ul2 li:nth-child(1) {
+    color: #07ac72;
+    cursor: default;
+}
+
+
+/*导航栏第二行样式*/
+
+.wrapper .ul2 li a:nth-child(1) {
+    cursor: default;
+    color: #000;
+}
+
+
+/*导航栏第二行样式*/
+
+.wrapper .ul2 li a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+/*导航栏第二行悬浮样式*/
+
+.wrapper .ul2 li a:hover {
+    color: #07ac72;
+    text-decoration: underline;
+}
+
+
+/*导航栏第二行第一个的样式*/
+
+#QuanWeiTuiJian {
+    color: #07ac72;
+    cursor: default;
+}
+
+
+/*导航栏第二行第一个的悬浮样式*/
+
+#QuanWeiTuiJian:hover {
+    text-decoration: none;
+}
+
+
+/*导航栏结束*/
+
+
+/*目录开始*/
+
+
+/*目录整体样式*/
+
+.menuWrapper {
+    height: 330px;
+    width: 1130px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/*目录整体布局*/
+
+.menuWrapper div {
+    display: inline-block;
+    height: 370px;
+    float: left;
+}
+
+
+/*目录左侧部分样式与布局*/
+
+.leftMenu {
+    width: 290px;
+    margin-right: 10px;
+    padding: 2px;
+    border: 1px solid #999;
+    height: 200px!important;
+    background-color: #fcfcfc;
+}
+
+
+/*目录左侧布局*/
+
+.leftMenuUl li {
+    float: left;
+    list-style: none;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/*目录左侧样式*/
+
+.leftMenuUl li a {
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 20px;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/*目录左侧悬浮样式*/
+
+.leftMenuUl li a:hover {
+    text-decoration: underline;
+    color: #f50;
+}
+
+
+/*目录左侧悬浮样式*/
+
+.leftMenuUl li a:nth-child(1) {
+    border-right: 1px solid #cccccc;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+
+/*右侧目录整体样式*/
+
+.rightMenu {
+    width: 830px;
+    height: 320px!important;
+    background-color: #fcfcfc;
+    border: 1px solid #999;
+}
+
+
+/*右侧目录整体样式*/
+
+#rightMenuUl li {
+    float: left;
+    width: 130px;
+    height: 38px;
+    list-style: none;
+    text-align: center;
+    line-height: 38px;
+}
+
+
+/*右侧目录整体样式*/
+
+#rightMenuUl li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*需要变色的内容*/
+
+#rightMenuUl li:nth-child(37) a,
+#rightMenuUl li:nth-child(38) a,
+#rightMenuUl li:nth-child(39) a,
+#rightMenuUl li:nth-child(40) a,
+#rightMenuUl li:nth-child(41) a,
+#rightMenuUl li:nth-child(42) a {
+    color: #07ac72;
+}
+
+
+/*右侧目录悬浮样式*/
+
+#rightMenuUl li a:hover {
+    text-decoration: underline;
+    color: #f50;
+}
+
+
+/*目录结束*/

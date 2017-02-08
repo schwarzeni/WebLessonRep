@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: #f01414
+}
+
+.body {
+    height: 200px;
+    background-color: #4046de;
+}
+
+.first {
+    float: left;
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    margin-left: -100%;
+}
+
+.second {
+    float: left;
+    background-color: brown;
+    height: 18px;
+    width: 100px;
+    position: relative;
+    margin-left: -100px;
+}
+
+.middle {
+    float: left;
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    background-color: aquamarine;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    background-color: #7bd412;
+}

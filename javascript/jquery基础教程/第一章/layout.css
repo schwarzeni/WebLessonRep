@@ -1,0 +1,61 @@
+
+
+.wrapper{
+    width:100px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 100;
+    top:10px;
+    background-color:aquamarine;
+    display: none;
+}
+
+.wrapper p{
+    margin-top:0;
+}
+
+.ShowMenu{
+    width:100px;
+    height:180px;
+    background-color: bisque;
+}
+
+.wrapperChangePage{
+    width:200px;
+}
+
+.wrapperChangePage div{
+    width:50px;
+    float: left;
+    text-align: center;
+}
+
+#Insert{
+    width:1000px;
+    height:300px;
+    background-color: bisque;
+    margin-top: 50px;
+    overflow: scroll;
+}
+
+#pageDown{
+    position: absolute;
+    z-index: 500;
+    width:1000px;
+    height:300px;
+    top:40px;
+    left: 0;
+    background-color: brown;
+    display: none;
+}
+
+#upPageDown{
+    width:100px;
+    height:100px;
+    background-color: azure;
+    float: right;
+    text-align: center;
+    line-height: 100px;
+}
+
+
